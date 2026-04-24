@@ -14,8 +14,8 @@ export default function HowItWorks() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="bg-white py-24 px-8 md:px-16" ref={ref}>
-      <p className="font-body text-[9px] tracking-[0.4em] text-black/25 uppercase mb-16">
+    <section className="bg-white py-16 md:py-24 px-8 md:px-16" ref={ref}>
+      <p className="font-body text-[9px] tracking-[0.4em] text-gray-300 uppercase mb-10 md:mb-16">
         How It Works
       </p>
 
@@ -23,19 +23,19 @@ export default function HowItWorks() {
         {steps.map((step, i) => (
           <motion.div
             key={step.num}
-            initial={{ opacity: 0, x: -16 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: i * 0.14, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-baseline gap-6 md:gap-10 py-8 border-b border-black/10 last:border-0"
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+            className="flex items-start gap-6 md:gap-10 py-8 border-b border-gray-100 last:border-0"
           >
-            <span className="font-display text-[100px] md:text-[140px] leading-none text-black/10 select-none shrink-0 w-28 md:w-40 text-right">
+            <span className="font-body text-[11px] text-brand-gold font-bold tracking-widest mt-2 w-6 shrink-0">
               {step.num}
             </span>
             <div>
-              <h3 className="font-display text-4xl md:text-6xl text-black mb-2 leading-none">
+              <h3 className="font-body font-black text-3xl md:text-6xl text-brand-dark leading-none mb-3 break-keep">
                 {step.title}
               </h3>
-              <p className="font-body text-sm text-black/40 mt-2">{step.desc}</p>
+              <p className="font-body text-sm text-gray-400 font-medium">{step.desc}</p>
             </div>
           </motion.div>
         ))}

@@ -1,9 +1,11 @@
 import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
-import HowItWorks from '@/components/sections/HowItWorks'
+import ProductDetail from '@/components/sections/ProductDetail'
+import MachineGallery from '@/components/sections/MachineGallery'
 import Comparison from '@/components/sections/Comparison'
 import Benefits from '@/components/sections/Benefits'
-import Numbers from '@/components/sections/Numbers'
+import ApplyForm from '@/components/sections/ApplyForm'
 
 export default function Home() {
   return (
@@ -11,11 +13,13 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <HowItWorks />
+        <ProductDetail />
+        <MachineGallery />
         <Comparison />
         <Benefits />
-        <Numbers />
+        <ApplyForm />
       </main>
+      <Footer />
     </>
   )
 }

@@ -14,16 +14,26 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 transition-colors duration-300 ${
-        scrolled ? 'bg-brand-dark' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 py-3 transition-all duration-300 ${
+        scrolled ? 'bg-white/80 backdrop-blur-md border-b border-gray-100' : 'bg-transparent'
       }`}
     >
-      <Image src="/logo.svg" alt="Protein King" width={36} height={36} priority />
+      <a href="#" aria-label="홈으로">
+        <Image
+          src="/logo.svg"
+          alt="Protein King"
+          width={180}
+          height={180}
+          className="w-auto h-10 md:h-16 object-contain -ml-7 md:-ml-14"
+          priority
+        />
+      </a>
+
       <a
         href="#apply"
-        className="font-body text-[10px] font-semibold tracking-[0.25em] text-white border border-white/40 px-4 py-2 hover:border-white hover:bg-white hover:text-brand-dark transition-all duration-200"
+        className="font-body text-[10px] font-semibold tracking-[0.25em] px-4 py-2 rounded-full bg-brand-dark text-white transition-all duration-200 hover:bg-brand-gold hover:text-brand-dark"
       >
-        파트너 신청
+        Contact
       </a>
     </header>
   )
