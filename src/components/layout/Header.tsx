@@ -22,8 +22,8 @@ export default function Header() {
         <Image
           src="/logo.png"
           alt="Protein King"
-          width={360}
-          height={144}
+          width={1288}
+          height={236}
           className="w-auto h-10 md:h-16 object-contain -ml-7 md:-ml-14"
           priority
         />
