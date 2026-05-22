@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import Typewriter from '@/components/ui/Typewriter'
 
 const copies = [
@@ -25,6 +26,25 @@ export default function Hero() {
           </h1>
         </div>
       </div>
+
+      {/* 하단 스크롤 유도 */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.8 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
+          className="flex flex-col items-center gap-[3px]"
+        >
+          <span className="block w-[1.5px] h-4 bg-gray-300 rounded-full" />
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="text-gray-300">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </motion.div>
+      </motion.div>
     </section>
   )
 }
