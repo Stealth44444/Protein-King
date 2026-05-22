@@ -24,7 +24,7 @@ export default function Header() {
           alt="Protein King"
           width={1288}
           height={236}
-          className="w-auto h-7 md:h-10 object-contain"
+          className="w-auto h-5 md:h-7 object-contain"
           priority
         />
       </a>
