@@ -20,10 +20,10 @@ export default function Header() {
     >
       <a href="#" aria-label="홈으로">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="Protein King"
-          width={180}
-          height={180}
+          width={360}
+          height={144}
           className="w-auto h-10 md:h-16 object-contain -ml-7 md:-ml-14"
           priority
         />
