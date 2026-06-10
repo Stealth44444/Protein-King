@@ -2,9 +2,11 @@
 
 import { useActionState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { applyAction } from '@/app/actions/apply'
 
 export default function ApplyForm() {
+  const t = useTranslations('apply')
   const [state, action, isPending] = useActionState(applyAction, { success: false })
 
   return (
@@ -19,23 +21,22 @@ export default function ApplyForm() {
           viewport={{ once: true }}
           className="w-full md:w-[40%] md:sticky md:top-32"
         >
-          <h2 className="font-body font-black text-3xl md:text-5xl text-brand-dark mb-6 leading-tight break-keep">
-            지금 바로 시작하세요,<br />
-            <span className="text-gradient-brand">무료 상담 신청</span>
+          <h2 className="font-body font-black text-3xl md:text-5xl text-brand-dark mb-6 leading-tight break-keep whitespace-pre-line">
+            {t('title').split('\n').map((line, i, arr) =>
+              i === arr.length - 1 ? (
+                <span key={i} className="text-gradient-brand">{line}</span>
+              ) : (
+                <span key={i}>{line}<br /></span>
+              )
+            )}
           </h2>
           <p className="font-body text-gray-400 text-base leading-relaxed mb-8">
-            단순 자판기 설치를 넘어, 수익성과 서비스 품질을 동시에 높이는 파트너십입니다.
+            {t('subtitle')}
           </p>
           <div className="space-y-3">
-            <p className="font-body text-sm text-gray-300">
-              신청서 접수 후 영업일 기준 1~2일 내 담당자가 직접 연락드립니다.
-            </p>
-            <p className="font-body text-sm text-gray-300">
-              도입 비용, 수익 구조, 설치 일정 등 모든 궁금증을 상담해드립니다.
-            </p>
-            <p className="font-body text-sm text-gray-300">
-              상담은 무료이며 도입 여부와 무관하게 진행됩니다.
-            </p>
+            <p className="font-body text-sm text-gray-300">{t('note1')}</p>
+            <p className="font-body text-sm text-gray-300">{t('note2')}</p>
+            <p className="font-body text-sm text-gray-300">{t('note3')}</p>
           </div>
         </motion.div>
 
@@ -52,24 +53,28 @@ export default function ApplyForm() {
             {/* 이름 + 전화번호 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="space-y-2">
-                <label htmlFor="name" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">이름</label>
+                <label htmlFor="name" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">
+                  {t('fields.name')}
+                </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   required
-                  placeholder="성함을 입력해주세요"
+                  placeholder={t('fields.namePlaceholder')}
                   className="w-full bg-white border border-gray-200 focus:border-brand-dark outline-none px-5 py-4 rounded-xl font-body text-brand-dark text-sm transition-all placeholder:text-gray-200"
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="phone" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">전화번호</label>
+                <label htmlFor="phone" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">
+                  {t('fields.phone')}
+                </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   required
-                  placeholder="010-1234-5678"
+                  placeholder={t('fields.phonePlaceholder')}
                   className="w-full bg-white border border-gray-200 focus:border-brand-dark outline-none px-5 py-4 rounded-xl font-body text-brand-dark text-sm transition-all placeholder:text-gray-200"
                 />
               </div>
@@ -77,25 +82,29 @@ export default function ApplyForm() {
 
             {/* 이메일 */}
             <div className="space-y-2">
-              <label htmlFor="email" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">이메일</label>
+              <label htmlFor="email" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">
+                {t('fields.email')}
+              </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
-                placeholder="example@email.com"
+                placeholder={t('fields.emailPlaceholder')}
                 className="w-full bg-white border border-gray-200 focus:border-brand-dark outline-none px-5 py-4 rounded-xl font-body text-brand-dark text-sm transition-all placeholder:text-gray-200"
               />
             </div>
 
             {/* 시설명 */}
             <div className="space-y-2">
-              <label htmlFor="gym" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">시설명</label>
+              <label htmlFor="gym" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">
+                {t('fields.gym')}
+              </label>
               <input
                 type="text"
                 id="gym"
                 name="gym"
-                placeholder="헬스장 또는 기관명"
+                placeholder={t('fields.gymPlaceholder')}
                 className="w-full bg-white border border-gray-200 focus:border-brand-dark outline-none px-5 py-4 rounded-xl font-body text-brand-dark text-sm transition-all placeholder:text-gray-200"
               />
             </div>
@@ -103,13 +112,16 @@ export default function ApplyForm() {
             {/* 시설 정보 (선택) */}
             <div className="space-y-2">
               <label htmlFor="details" className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">
-                시설 정보 <span className="text-gray-300 normal-case tracking-normal">(선택)</span>
+                {t('fields.details')}{' '}
+                <span className="text-gray-300 normal-case tracking-normal">
+                  {t('fields.detailsOptional')}
+                </span>
               </label>
               <textarea
                 id="details"
                 name="details"
                 rows={3}
-                placeholder="시설 규모, 위치, 문의 사항 등을 자유롭게 적어주세요"
+                placeholder={t('fields.detailsPlaceholder')}
                 className="w-full bg-white border border-gray-200 focus:border-brand-dark outline-none px-5 py-4 rounded-xl font-body text-brand-dark text-sm transition-all placeholder:text-gray-200 resize-none"
               />
             </div>
@@ -124,7 +136,7 @@ export default function ApplyForm() {
                 }
               `}
             >
-              {isPending ? '전송 중...' : '무료 상담 신청하기'}
+              {isPending ? t('submitting') : t('submit')}
             </button>
 
             <AnimatePresence mode="wait">
@@ -144,8 +156,8 @@ export default function ApplyForm() {
                   animate={{ opacity: 1, y: 0 }}
                   className="border border-brand-gold/30 bg-brand-gold/5 p-6 rounded-xl text-center"
                 >
-                  <p className="font-body font-black text-brand-dark text-lg mb-1">신청이 완료되었습니다</p>
-                  <p className="font-body text-gray-400 text-sm">전문 상담사가 가이드북과 함께 연락드리겠습니다.</p>
+                  <p className="font-body font-black text-brand-dark text-lg mb-1">{t('successTitle')}</p>
+                  <p className="font-body text-gray-400 text-sm">{t('successDesc')}</p>
                 </motion.div>
               )}
             </AnimatePresence>

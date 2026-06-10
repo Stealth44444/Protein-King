@@ -99,5 +99,33 @@
   },
   "footer": {
     "copy": "© 2025 Protein King"
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "steps": [
+      { "num": "01", "title": "Load Powder", "desc": "Protein powder and skim milk powder are loaded into the machine." },
+      { "num": "02", "title": "Instant Blending", "desc": "Water and powder are automatically mixed inside the machine." },
+      { "num": "03", "title": "Cup Dispensed", "desc": "A fresh protein shake is dispensed in seconds." }
+    ]
+  },
+  "productDetail": {
+    "title": "The smartest machine\n{completes your brand.}",
+    "subtitle": "Powerful blending as standard, with an unrivalled auto-sterilisation system and stable networking to minimise management burden and maximise user satisfaction.",
+    "specs": [
+      { "label": "Category", "value": "Unmanned Digital Blending Station" },
+      { "label": "Dimensions", "value": "H 1830mm x W 700mm x D 664mm" },
+      { "label": "Payment", "value": "Credit Card / Apple Pay / QR / Cash" },
+      { "label": "Network", "value": "4G LTE Router / SDK Integration" }
+    ]
+  },
+  "machineGallery": {
+    "title": "Trusted hardware,\n{proven safety.}",
+    "subtitle": "Protein King complies with domestic and international safety standards including KC and CE certification, and strictly controls quality down to internal components. Consistent, reliable operation in any environment.",
+    "specs": [
+      { "label": "Safety Cert.", "value": "KC · CE Certified" },
+      { "label": "Quality Std.", "value": "ISO 9001 Compliant" },
+      { "label": "Sterilisation", "value": "UVend™ Auto-Sterilisation" },
+      { "label": "Blending Unit", "value": "2000W High-Power Blender" }
+    ]
   }
 }

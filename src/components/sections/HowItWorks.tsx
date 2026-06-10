@@ -2,21 +2,25 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { useTranslations } from 'next-intl'
 
-const steps = [
-  { num: '01', title: '파우더 투입', desc: '프로틴 파우더와 탈지분유를 기계에 넣습니다.' },
-  { num: '02', title: '즉석 블렌딩', desc: '기계 내부에서 물과 자동 혼합됩니다.' },
-  { num: '03', title: '컵 배출 · 완성', desc: '신선한 프로틴 쉐이크가 바로 나옵니다.' },
-]
+interface Step {
+  num: string
+  title: string
+  desc: string
+}
 
 export default function HowItWorks() {
+  const t = useTranslations('howItWorks')
+  const steps = t.raw('steps') as Step[]
+
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
     <section className="bg-white py-16 md:py-24 px-8 md:px-16" ref={ref}>
       <p className="font-body text-[9px] tracking-[0.4em] text-gray-300 uppercase mb-10 md:mb-16">
-        How It Works
+        {t('label')}
       </p>
 
       <div>

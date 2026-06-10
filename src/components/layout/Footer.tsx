@@ -1,4 +1,8 @@
-export default function Footer() {
+import { getTranslations } from 'next-intl/server'
+
+export default async function Footer() {
+  const t = await getTranslations('footer')
+
   return (
     <footer className="bg-white border-t border-gray-100 py-16 px-8 md:px-16">
       <div className="container mx-auto">
@@ -23,7 +27,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-100">
           <p className="font-body text-xs text-gray-300 tracking-widest uppercase">
-            © 2026 Protein King. All rights reserved.
+            {t('copy')}
           </p>
         </div>
       </div>

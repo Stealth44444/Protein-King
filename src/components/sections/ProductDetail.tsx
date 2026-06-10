@@ -2,28 +2,33 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
-const specs = [
-  { label: '제품 구분', value: '무인 디지털 블렌딩 스테이션' },
-  { label: '크기 (규격)', value: 'H 1830mm x W 700mm x D 664mm' },
-  { label: '결제 시스템', value: '신용카드 / 삼성페이 / QR / 현금' },
-  { label: '네트워크', value: '4G LTE 로우터 / SDK 통합 지원' },
-]
+interface Spec {
+  label: string
+  value: string
+}
 
 export default function ProductDetail() {
+  const t = useTranslations('productDetail')
+  const specs = t.raw('specs') as Spec[]
+
+  // Split title on \n; render last line with gradient
+  const titleLines = t('title').split('\n')
+
   return (
     <section className="relative py-24 bg-white overflow-hidden text-brand-dark">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 container mx-auto px-8 md:px-16"
       >
         <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
-          
+
           {/* 머신 이미지: 왼쪽 배치 */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -32,7 +37,7 @@ export default function ProductDetail() {
             <div className="relative w-[300px] h-[550px] md:w-[450px] md:h-[800px]">
               <Image
                 src="/machine.png"
-                alt="Protein King 머신 실물"
+                alt="Protein King Machine"
                 fill
                 className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
               />
@@ -47,13 +52,16 @@ export default function ProductDetail() {
               viewport={{ once: true }}
             >
               <h2 className="font-body font-black text-3xl md:text-5xl text-brand-dark mb-6 leading-tight break-keep">
-                가장 스마트한 머신이<br />
-                <span className="text-gradient-brand">브랜드의 품격을 완성합니다.</span>
+                {titleLines.map((line, i) =>
+                  i === titleLines.length - 1 ? (
+                    <span key={i} className="text-gradient-brand">{line}</span>
+                  ) : (
+                    <span key={i}>{line}<br /></span>
+                  )
+                )}
               </h2>
               <p className="font-body text-gray-500 text-base md:text-lg leading-relaxed mb-10 md:mb-12 max-w-lg">
-                강력한 블렌딩 성능은 기본, 독보적인 자동 살균 시스템과 
-                안정적인 네트워킹으로 관리의 번거로움은 줄이고 
-                사용자의 만족도는 극대화했습니다.
+                {t('subtitle')}
               </p>
 
               {/* 스펙 그리드 */}

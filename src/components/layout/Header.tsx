@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function Header() {
+  const t = useTranslations('header')
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function Header() {
         href="#apply"
         className="font-body text-[10px] font-semibold tracking-[0.25em] px-4 py-2 rounded-full bg-brand-dark text-white transition-all duration-200 hover:bg-brand-gold hover:text-brand-dark"
       >
-        Contact
+        {t('cta')}
       </a>
     </header>
   )

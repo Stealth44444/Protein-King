@@ -1,16 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import Typewriter from '@/components/ui/Typewriter'
 
-const copies = [
-  '쉐이커 들고 다니는\n시대는 {이제 끝}',
-  '아직도 파우더 챙기세요?\n가방은 {가볍게} 오셔도 돼요',
-  '우리는 피트니스 문화의\n{새로운 기준}을 세웁니다',
-  '터치, 10초, 끝.\n가장 {깔끔한 루틴}의 완성',
-]
-
 export default function Hero() {
+  const t = useTranslations('hero')
+  const copies = t.raw('copies') as string[]
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center pt-20 bg-white overflow-hidden">
       {/* 중앙: 카피 */}
@@ -39,7 +36,9 @@ export default function Hero() {
           transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
           className="flex items-center gap-2"
         >
-          <p className="font-body text-[10px] tracking-widest text-gray-300 uppercase">아래로 내려보세요</p>
+          <p className="font-body text-[10px] tracking-widest text-gray-300 uppercase">
+            {t('scroll')}
+          </p>
           <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="text-gray-300">
             <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>

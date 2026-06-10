@@ -99,5 +99,33 @@
   },
   "footer": {
     "copy": "© 2025 Protein King"
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "steps": [
+      { "num": "01", "title": "投入蛋白粉", "desc": "將蛋白粉同脫脂奶粉放入機器。" },
+      { "num": "02", "title": "即場混合", "desc": "機器內部自動加水混合。" },
+      { "num": "03", "title": "出杯完成", "desc": "新鮮蛋白奶昔即刻出杯。" }
+    ]
+  },
+  "productDetail": {
+    "title": "最智能嘅機器，\n{成就你品牌嘅格調。}",
+    "subtitle": "強大嘅混合性能係基本，加上獨一無二嘅自動殺菌系統同穩定嘅網絡連接，令管理更輕鬆，用家滿意度更高。",
+    "specs": [
+      { "label": "產品類別", "value": "無人數碼混合站" },
+      { "label": "尺寸規格", "value": "H 1830mm x W 700mm x D 664mm" },
+      { "label": "付款方式", "value": "信用卡 / Apple Pay / QR / 現金" },
+      { "label": "網絡連接", "value": "4G LTE 路由器 / SDK 整合支援" }
+    ]
+  },
+  "machineGallery": {
+    "title": "可信賴嘅硬件，\n{經過驗證嘅安全性。}",
+    "subtitle": "Protein King 符合KC及CE等本地及國際安全標準，由內到外嚴格管控品質。無論在任何空間，都承諾穩定可靠嘅運作。",
+    "specs": [
+      { "label": "安全認證", "value": "KC · CE 認證完成" },
+      { "label": "品質標準", "value": "ISO 9001 國際規格" },
+      { "label": "殺菌技術", "value": "UVend™ 實時自動殺菌" },
+      { "label": "混合單元", "value": "2000W 高功率精密攪拌機" }
+    ]
   }
 }
