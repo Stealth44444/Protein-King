@@ -1,12 +1,103 @@
 {
-  "header": { "cta": "聯絡我們" },
+  "header": {
+    "cta": "聯絡我們"
+  },
   "hero": {
     "label": "PROTEIN KING",
-    "copy1": "搖搖杯？\n{係時候丟低佢喇}",
-    "copy2": "唔記得帶蛋白粉？\n{我哋幫你搞掂}",
-    "copy3": "即場新鮮製作，\n{蛋白補充唔等人}",
+    "copies": [
+      "搖搖杯係舊時代嘅嘢，\n{而家唔使喇}",
+      "唔記得帶蛋白粉？\n{我哋幫你搞掂}",
+      "即場新鮮製作，\n{蛋白補充唔等人}",
+      "一掹，十秒，完成。\n{最整潔嘅訓練流程}"
+    ],
     "cta": "立即申請合作 →",
     "scroll": "向下滾動"
   },
-  "footer": { "copy": "© 2025 Protein King" }
+  "comparison": {
+    "title": "唔好再用陳列櫃喇，\n試吓Protein King。",
+    "subtitle": "衝破RTD飲品嘅低利潤困局，用Protein King嘅自動化系統令你嘅場地收益最大化。",
+    "col1": "舊式RTD陳列櫃",
+    "col2": "Protein King 補給站",
+    "rows": [
+      { "left": "每杯利潤偏低", "right": "每杯利潤逾HK$25" },
+      { "left": "入貨補貨工作繁重", "right": "大包裝蛋白粉，補充簡單" },
+      { "left": "每支HK$40–80", "right": "每杯HK$27.59" },
+      { "left": "只含大豆蛋白", "right": "乳清蛋白，價格更低" }
+    ]
+  },
+  "benefits": {
+    "title": "擺低佢，坐享其成。",
+    "tabs": {
+      "gym": {
+        "label": "健身室",
+        "items": [
+          {
+            "num": "01",
+            "title": "穩定每月收入",
+            "desc": "收益分成，零銷售風險。唔使入貨，唔使追數。"
+          },
+          {
+            "num": "02",
+            "title": "零管理負擔",
+            "desc": "唔使落單、唔使查到期日。維修保養由Protein King全程負責。"
+          },
+          {
+            "num": "03",
+            "title": "留住會員",
+            "desc": "訓練後即時補充蛋白質，獨家設施令會員唔捨得走。"
+          }
+        ]
+      },
+      "university": {
+        "label": "大學",
+        "items": [
+          {
+            "num": "01",
+            "title": "提升學生福祉指標",
+            "desc": "價格遠低於便利店RTD飲品，真正嘅學生健康計劃。"
+          },
+          {
+            "num": "02",
+            "title": "完全無人管理",
+            "desc": "安裝後唔需要任何員工介入，由Protein King全程處理。"
+          },
+          {
+            "num": "03",
+            "title": "提升設施價值",
+            "desc": "由普通健身房升級成照顧全面恢復嘅高端場地。"
+          }
+        ]
+      }
+    }
+  },
+  "apply": {
+    "title": "即刻開始，\n免費諮詢。",
+    "subtitle": "唔止係自動販賣機——係一個幫你增加收入同提升會員體驗嘅合作關係。",
+    "note1": "收到申請後，我哋嘅團隊會喺1–2個工作天內聯絡你。",
+    "note2": "我哋會詳細解釋收益模式、安裝流程同其他問題。",
+    "note3": "諮詢完全免費，唔需要即時承諾。",
+    "fields": {
+      "name": "姓名",
+      "phone": "電話",
+      "email": "電郵",
+      "gym": "場地名稱",
+      "details": "其他資料",
+      "detailsOptional": "（選填）",
+      "namePlaceholder": "你嘅名字",
+      "phonePlaceholder": "+852 1234 5678",
+      "emailPlaceholder": "example@email.com",
+      "gymPlaceholder": "健身室或機構名稱",
+      "detailsPlaceholder": "場地規模、位置或其他問題"
+    },
+    "submit": "申請免費諮詢",
+    "submitting": "傳送中...",
+    "successTitle": "查詢已收到！",
+    "successDesc": "我哋嘅顧問會盡快聯絡你並提供詳細資料。",
+    "errorName": "請輸入你嘅姓名。",
+    "errorPhone": "請輸入你嘅電話號碼。",
+    "errorEmail": "請輸入你嘅電郵地址。"
+  },
+  "footer": {
+    "copy": "© 2025 Protein King"
+  }
 }

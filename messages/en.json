@@ -1,12 +1,103 @@
 {
-  "header": { "cta": "Contact Us" },
+  "header": {
+    "cta": "Contact Us"
+  },
   "hero": {
     "label": "PROTEIN KING",
-    "copy1": "Shaker bottles\nare so last year",
-    "copy2": "Forgot your powder?\n{You're covered}",
-    "copy3": "Fresh protein.\n{On demand.}",
+    "copies": [
+      "Shaker bottles\nare {so last year}",
+      "Forgot your powder?\n{We've got you covered}",
+      "Fresh protein.\n{Blended on demand.}",
+      "Touch. 10 seconds. Done.\n{The cleanest routine yet.}"
+    ],
     "cta": "Become a Partner →",
     "scroll": "Scroll to explore"
   },
-  "footer": { "copy": "© 2025 Protein King" }
+  "comparison": {
+    "title": "Ditch the showcase.\nChoose Protein King.",
+    "subtitle": "Go beyond the low margins of RTD beverages. Maximize your facility's revenue with Protein King's automated system.",
+    "col1": "RTD Showcase",
+    "col2": "Protein King Station",
+    "rows": [
+      { "left": "Low margin per serving", "right": "HK$25+ margin per cup" },
+      { "left": "Heavy restocking labour", "right": "Simple bulk powder refill" },
+      { "left": "HK$40–80 per bottle", "right": "HK$27.59 per serving" },
+      { "left": "Soy protein only", "right": "Whey protein, lower price" }
+    ]
+  },
+  "benefits": {
+    "title": "Set it up. Earn while you sleep.",
+    "tabs": {
+      "gym": {
+        "label": "Gym",
+        "items": [
+          {
+            "num": "01",
+            "title": "Guaranteed monthly income",
+            "desc": "Revenue share with zero sales risk. No stocking, no tracking."
+          },
+          {
+            "num": "02",
+            "title": "Zero management overhead",
+            "desc": "No orders, no expiry checks. Maintenance handled by Protein King."
+          },
+          {
+            "num": "03",
+            "title": "Member retention",
+            "desc": "Instant post-workout nutrition. A unique amenity that keeps members coming back."
+          }
+        ]
+      },
+      "university": {
+        "label": "University",
+        "items": [
+          {
+            "num": "01",
+            "title": "Student wellness boost",
+            "desc": "Fraction of the cost of convenience store RTDs. A real student health initiative."
+          },
+          {
+            "num": "02",
+            "title": "Fully unmanned",
+            "desc": "Zero staff involvement after installation. Protein King handles everything."
+          },
+          {
+            "num": "03",
+            "title": "Elevate your facilities",
+            "desc": "Transform a gym space into a complete recovery destination."
+          }
+        ]
+      }
+    }
+  },
+  "apply": {
+    "title": "Start today.\nFree consultation.",
+    "subtitle": "More than a vending machine — a partnership that grows your revenue and your members' experience.",
+    "note1": "Our team will reach out within 1–2 business days after your enquiry.",
+    "note2": "We'll walk you through the revenue model, installation, and any questions.",
+    "note3": "Consultation is free, with no obligation to proceed.",
+    "fields": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "gym": "Facility Name",
+      "details": "Details",
+      "detailsOptional": "(Optional)",
+      "namePlaceholder": "Your name",
+      "phonePlaceholder": "+852 1234 5678",
+      "emailPlaceholder": "example@email.com",
+      "gymPlaceholder": "Gym or organisation name",
+      "detailsPlaceholder": "Size, location, or any questions"
+    },
+    "submit": "Request Free Consultation",
+    "submitting": "Sending...",
+    "successTitle": "Enquiry received!",
+    "successDesc": "Our consultant will be in touch with a full info pack.",
+    "errorName": "Please enter your name.",
+    "errorPhone": "Please enter your phone number.",
+    "errorEmail": "Please enter your email."
+  },
+  "footer": {
+    "copy": "© 2025 Protein King"
+  }
 }
