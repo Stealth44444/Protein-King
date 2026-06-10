@@ -1,0 +1,12 @@
+{
+  "header": { "cta": "Contact Us" },
+  "hero": {
+    "label": "PROTEIN KING",
+    "copy1": "Shaker bottles\nare so last year",
+    "copy2": "Forgot your powder?\n{You're covered}",
+    "copy3": "Fresh protein.\n{On demand.}",
+    "cta": "Become a Partner →",
+    "scroll": "Scroll to explore"
+  },
+  "footer": { "copy": "© 2025 Protein King" }
+}

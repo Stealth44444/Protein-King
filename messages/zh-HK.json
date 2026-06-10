@@ -1,0 +1,12 @@
+{
+  "header": { "cta": "聯絡我們" },
+  "hero": {
+    "label": "PROTEIN KING",
+    "copy1": "搖搖杯？\n{係時候丟低佢喇}",
+    "copy2": "唔記得帶蛋白粉？\n{我哋幫你搞掂}",
+    "copy3": "即場新鮮製作，\n{蛋白補充唔等人}",
+    "cta": "立即申請合作 →",
+    "scroll": "向下滾動"
+  },
+  "footer": { "copy": "© 2025 Protein King" }
+}

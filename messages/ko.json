@@ -1,0 +1,12 @@
+{
+  "header": { "cta": "상담 신청" },
+  "hero": {
+    "label": "PROTEIN KING",
+    "copy1": "쉐이커 들고 다니는\n{시대는 이제 끝}",
+    "copy2": "파우더는 집에 있죠?\n{여기서 바로 드세요}",
+    "copy3": "터치, 10초, 끝.\n{가장 깔끔한 루틴}",
+    "cta": "파트너 신청 →",
+    "scroll": "아래로 내려보세요"
+  },
+  "footer": { "copy": "© 2025 Protein King" }
+}
