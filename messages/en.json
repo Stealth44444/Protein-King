@@ -110,7 +110,7 @@
     ]
   },
   "productDetail": {
-    "title": "The smartest machine\n{completes your brand.}",
+    "title": "The smartest machine\ncompletes your brand.",
     "subtitle": "Powerful blending as standard, with an unrivalled auto-sterilisation system and stable networking to minimise management burden and maximise user satisfaction.",
     "specs": [
       { "label": "Category", "value": "Unmanned Digital Blending Station" },
@@ -130,7 +130,7 @@
     ]
   },
   "machineGallery": {
-    "title": "Trusted hardware,\n{proven safety.}",
+    "title": "Trusted hardware,\nproven safety.",
     "subtitle": "Protein King complies with domestic and international safety standards including KC and CE certification, and strictly controls quality down to internal components. Consistent, reliable operation in any environment.",
     "specs": [
       { "label": "Safety Cert.", "value": "KC · CE Certified" },
