@@ -111,12 +111,14 @@
   },
   "productDetail": {
     "title": "The smartest machine\ncompletes your brand.",
-    "subtitle": "Powerful blending as standard, with an unrivalled auto-sterilisation system and stable networking to minimise management burden and maximise user satisfaction.",
+    "subtitle": "Fresh blends in 30–70 seconds. Cold or hot, 3°C to 90°C. Android 11 with Wi-Fi and Bluetooth — built for unattended operation.",
     "specs": [
-      { "label": "Category", "value": "Unmanned Digital Blending Station" },
-      { "label": "Dimensions", "value": "H 1830mm x W 700mm x D 664mm" },
-      { "label": "Payment", "value": "Credit Card / Apple Pay / QR / Cash" },
-      { "label": "Network", "value": "4G LTE Router / SDK Integration" }
+      { "label": "Dimensions", "value": "W 700 × D 740 × H 1905 mm" },
+      { "label": "Prep Time", "value": "30–70 seconds" },
+      { "label": "Temperature", "value": "3°C – Room Temp – 90°C" },
+      { "label": "Capacity", "value": "5 × 4L + 4 × 2.2L canisters" },
+      { "label": "Power", "value": "1800W / AC 220V" },
+      { "label": "Connectivity", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
     ]
   },
   "process": {
@@ -131,12 +133,12 @@
   },
   "machineGallery": {
     "title": "Trusted hardware,\nproven safety.",
-    "subtitle": "Protein King complies with domestic and international safety standards including KC and CE certification, and strictly controls quality down to internal components. Consistent, reliable operation in any environment.",
+    "subtitle": "Built to run unattended. The JK91 is engineered for continuous operation — from precision blending to hygiene, every component is held to a strict standard.",
     "specs": [
-      { "label": "Safety Cert.", "value": "KC · CE Certified" },
-      { "label": "Quality Std.", "value": "ISO 9001 Compliant" },
-      { "label": "Sterilisation", "value": "UVend™ Auto-Sterilisation" },
-      { "label": "Blending Unit", "value": "2000W High-Power Blender" }
+      { "label": "OS", "value": "Android 11.0" },
+      { "label": "Memory", "value": "2 GB RAM / 32 GB ROM" },
+      { "label": "Mixing Modes", "value": "Fixed / Moving / Intermittent / Upgraded" },
+      { "label": "Environment", "value": "5–35°C, ≤80% RH" }
     ]
   }
 }

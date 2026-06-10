@@ -111,12 +111,14 @@
   },
   "productDetail": {
     "title": "最智能嘅機器，\n成就你品牌嘅格調。",
-    "subtitle": "強大嘅混合性能係基本，加上獨一無二嘅自動殺菌系統同穩定嘅網絡連接，令管理更輕鬆，用家滿意度更高。",
+    "subtitle": "30至70秒即場製作。3°C凍飲到90°C熱飲，隨意調節。Android 11配備Wi-Fi及藍牙——專為無人運作而設計。",
     "specs": [
-      { "label": "產品類別", "value": "無人數碼混合站" },
-      { "label": "尺寸規格", "value": "H 1830mm x W 700mm x D 664mm" },
-      { "label": "付款方式", "value": "信用卡 / Apple Pay / QR / 現金" },
-      { "label": "網絡連接", "value": "4G LTE 路由器 / SDK 整合支援" }
+      { "label": "機身尺寸", "value": "W 700 × D 740 × H 1905 mm" },
+      { "label": "製作時間", "value": "30–70秒" },
+      { "label": "飲品溫度", "value": "3°C – 室溫 – 90°C" },
+      { "label": "容量", "value": "大桶5個(4L) + 小桶4個(2.2L)" },
+      { "label": "電力", "value": "1800W / AC 220V" },
+      { "label": "連接", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
     ]
   },
   "process": {
@@ -131,12 +133,12 @@
   },
   "machineGallery": {
     "title": "可信賴嘅硬件，\n經過驗證嘅安全性。",
-    "subtitle": "Protein King 符合KC及CE等本地及國際安全標準，由內到外嚴格管控品質。無論在任何空間，都承諾穩定可靠嘅運作。",
+    "subtitle": "專為無人運作而設計。JK91由精準混合到衛生管理，每一個內部零件都符合嚴格標準。",
     "specs": [
-      { "label": "安全認證", "value": "KC · CE 認證完成" },
-      { "label": "品質標準", "value": "ISO 9001 國際規格" },
-      { "label": "殺菌技術", "value": "UVend™ 實時自動殺菌" },
-      { "label": "混合單元", "value": "2000W 高功率精密攪拌機" }
+      { "label": "操作系統", "value": "Android 11.0" },
+      { "label": "記憶體", "value": "RAM 2GB / ROM 32GB" },
+      { "label": "混合模式", "value": "固定 / 移動 / 間歇 / 升級算法" },
+      { "label": "使用環境", "value": "5–35°C，濕度≤80%" }
     ]
   }
 }
