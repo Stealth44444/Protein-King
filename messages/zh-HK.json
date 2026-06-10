@@ -95,7 +95,8 @@
     "successDesc": "我哋嘅顧問會盡快聯絡你並提供詳細資料。",
     "errorName": "請輸入你嘅姓名。",
     "errorPhone": "請輸入你嘅電話號碼。",
-    "errorEmail": "請輸入你嘅電郵地址。"
+    "errorEmail": "請輸入你嘅電郵地址。",
+    "errorSend": "傳送失敗，請再試一次。"
   },
   "footer": {
     "copy": "© 2025 Protein King"
@@ -116,6 +117,16 @@
       { "label": "尺寸規格", "value": "H 1830mm x W 700mm x D 664mm" },
       { "label": "付款方式", "value": "信用卡 / Apple Pay / QR / 現金" },
       { "label": "網絡連接", "value": "4G LTE 路由器 / SDK 整合支援" }
+    ]
+  },
+  "process": {
+    "label": "點樣開始",
+    "title": "四個步驟，\n第一杯即將到來。",
+    "steps": [
+      { "num": "01", "title": "提交查詢", "desc": "填寫表格，我哋會喺1–2個工作天內聯絡你。" },
+      { "num": "02", "title": "場地評估", "desc": "我哋嘅團隊親身到場確認擺放位置及安裝細節。" },
+      { "num": "03", "title": "免費安裝", "desc": "機器零費用安裝，一切由我哋負責。" },
+      { "num": "04", "title": "開始分成", "desc": "即日起計收益分成，唔使入貨，唔使煩惱。" }
     ]
   },
   "machineGallery": {

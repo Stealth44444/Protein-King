@@ -95,7 +95,8 @@
     "successDesc": "Our consultant will be in touch with a full info pack.",
     "errorName": "Please enter your name.",
     "errorPhone": "Please enter your phone number.",
-    "errorEmail": "Please enter your email."
+    "errorEmail": "Please enter your email.",
+    "errorSend": "Failed to send. Please try again."
   },
   "footer": {
     "copy": "© 2025 Protein King"
@@ -116,6 +117,16 @@
       { "label": "Dimensions", "value": "H 1830mm x W 700mm x D 664mm" },
       { "label": "Payment", "value": "Credit Card / Apple Pay / QR / Cash" },
       { "label": "Network", "value": "4G LTE Router / SDK Integration" }
+    ]
+  },
+  "process": {
+    "label": "HOW TO START",
+    "title": "Four steps to\nyour first cup.",
+    "steps": [
+      { "num": "01", "title": "Enquiry", "desc": "Fill out the form. We'll reach out within 1–2 business days." },
+      { "num": "02", "title": "Site Assessment", "desc": "Our team visits your facility to confirm placement and setup." },
+      { "num": "03", "title": "Installation", "desc": "Machine installed at zero cost. We handle everything." },
+      { "num": "04", "title": "Revenue Begins", "desc": "Revenue share starts from day one. No stocking, no hassle." }
     ]
   },
   "machineGallery": {

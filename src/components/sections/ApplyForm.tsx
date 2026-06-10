@@ -7,7 +7,7 @@ import { applyAction } from '@/app/actions/apply'
 
 export default function ApplyForm() {
   const t = useTranslations('apply')
-  const [state, action, isPending] = useActionState(applyAction, { success: false })
+  const [state, action, isPending] = useActionState(applyAction, { success: false, errorCode: undefined })
 
   return (
     <section id="apply" className="py-16 md:py-32 bg-white px-8 md:px-16">
@@ -140,14 +140,14 @@ export default function ApplyForm() {
             </button>
 
             <AnimatePresence mode="wait">
-              {state.error && (
+              {state.errorCode && (
                 <motion.p
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   className="text-red-400 text-center text-sm font-body"
                 >
-                  {state.error}
+                  {t(state.errorCode)}
                 </motion.p>
               )}
               {state.success && (

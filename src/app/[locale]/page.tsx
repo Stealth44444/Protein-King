@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero'
 import ProductDetail from '@/components/sections/ProductDetail'
 import MachineGallery from '@/components/sections/MachineGallery'
 import Comparison from '@/components/sections/Comparison'
+import Process from '@/components/sections/Process'
 import Benefits from '@/components/sections/Benefits'
 import ApplyForm from '@/components/sections/ApplyForm'
 
@@ -16,6 +17,7 @@ export default function LocalePage() {
         <ProductDetail />
         <MachineGallery />
         <Comparison />
+        <Process />
         <Benefits />
         <ApplyForm />
       </main>
