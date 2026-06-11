@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { motion, useInView } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 interface ProcessStep {
@@ -10,50 +10,64 @@ interface ProcessStep {
   desc: string
 }
 
+function StepCard({ step }: { step: ProcessStep }) {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true, margin: '-120px' })
+
+  return (
+    <div
+      ref={ref}
+      className="flex items-stretch bg-[#1a1a1a] rounded-2xl overflow-hidden"
+    >
+      {/* Number column */}
+      <div className="flex items-center justify-center w-20 md:w-28 shrink-0">
+        <span
+          className={`font-body font-black text-2xl md:text-4xl transition-colors duration-700 ${
+            inView ? 'text-brand-gold' : 'text-white/15'
+          }`}
+        >
+          {step.num}
+        </span>
+      </div>
+
+      {/* Divider */}
+      <div className="w-px bg-white/10 self-stretch" />
+
+      {/* Content */}
+      <div className="flex-1 px-6 md:px-10 py-7 md:py-8">
+        <h3 className="font-body font-black text-lg md:text-2xl text-white leading-snug mb-2 break-keep">
+          {step.title}
+        </h3>
+        <p className="font-body text-sm text-gray-500 leading-relaxed break-keep">
+          {step.desc}
+        </p>
+      </div>
+    </div>
+  )
+}
+
 export default function Process() {
   const t = useTranslations('process')
   const steps = t.raw('steps') as ProcessStep[]
 
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
-
   return (
-    <section className="bg-white py-16 md:py-24 px-8 md:px-16" ref={ref}>
-      <p className="font-body text-[9px] tracking-[0.4em] text-gray-300 uppercase mb-10 md:mb-16">
-        {t('label')}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-8 md:gap-16 mb-12 md:mb-20">
-        <h2 className="font-body font-black text-4xl md:text-6xl text-brand-dark leading-tight whitespace-pre-line break-keep">
-          {t('title')}
+    <section className="bg-brand-dark py-16 md:py-24">
+      <div className="wrapper">
+        <h2 className="font-body font-black text-4xl md:text-6xl text-white leading-tight whitespace-pre-line break-keep mb-12 md:mb-16">
+          {t('title').split('\n').map((line, i, arr) =>
+            i === arr.length - 1 ? (
+              <span key={i} className="text-gradient-brand">{line}</span>
+            ) : (
+              <span key={i}>{line}<br /></span>
+            )
+          )}
         </h2>
-      </div>
 
-      <div>
-        {steps.map((step, i) => (
-          <motion.div
-            key={step.num}
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-start gap-6 md:gap-12 py-8 border-b border-gray-100 last:border-0"
-          >
-            {/* Step number */}
-            <span className="font-body text-[11px] text-brand-gold font-bold tracking-widest mt-1 w-6 shrink-0">
-              {step.num}
-            </span>
-
-            {/* Content */}
-            <div className="flex-1">
-              <h3 className="font-body font-black text-2xl md:text-4xl text-brand-dark leading-none mb-3 break-keep">
-                {step.title}
-              </h3>
-              <p className="font-body text-sm text-gray-400 font-medium leading-relaxed">
-                {step.desc}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+        <div className="flex flex-col gap-3">
+          {steps.map((step) => (
+            <StepCard key={step.num} step={step} />
+          ))}
+        </div>
       </div>
     </section>
   )
