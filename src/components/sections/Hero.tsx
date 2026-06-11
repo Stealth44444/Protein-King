@@ -97,7 +97,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="flex-1"
+            className="flex-1 min-w-0"
           >
             <h1 className="font-body font-black text-[54px] leading-[1.2] text-white break-keep max-w-xl">
               <span className="block">{t('titlePrefix')}</span>
