@@ -4,7 +4,13 @@
   },
   "hero": {
     "label": "PROTEIN KING",
-    "title": "A new revenue stream.\n{70 cm is all it takes.}",
+    "titlePrefix": "A new revenue stream.",
+    "phrases": [
+      "70 cm is all it takes.",
+      "Zero installation cost.",
+      "We handle everything.",
+      "Revenue from day one."
+    ],
     "cta": "Become a Partner →",
     "scroll": "Scroll to explore"
   },

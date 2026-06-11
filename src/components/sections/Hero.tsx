@@ -3,48 +3,55 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { useState, useEffect } from 'react'
+
+function Typewriter({ phrases }: { phrases: string[] }) {
+  const [text, setText] = useState('')
+  const [phraseIdx, setPhraseIdx] = useState(0)
+  const [deleting, setDeleting] = useState(false)
+  const [blink, setBlink] = useState(true)
+
+  useEffect(() => {
+    const current = phrases[phraseIdx]
+    let timeout: ReturnType<typeof setTimeout>
+
+    if (!deleting) {
+      if (text.length < current.length) {
+        timeout = setTimeout(() => setText(current.slice(0, text.length + 1)), 65)
+      } else {
+        timeout = setTimeout(() => setDeleting(true), 2400)
+      }
+    } else {
+      if (text.length > 0) {
+        timeout = setTimeout(() => setText(t => t.slice(0, -1)), 32)
+      } else {
+        setDeleting(false)
+        setPhraseIdx(i => (i + 1) % phrases.length)
+      }
+    }
+
+    return () => clearTimeout(timeout)
+  }, [text, deleting, phraseIdx, phrases])
+
+  useEffect(() => {
+    const iv = setInterval(() => setBlink(b => !b), 530)
+    return () => clearInterval(iv)
+  }, [])
+
+  return (
+    <span className="text-gradient-brand">
+      {text}
+      <span className={`${blink ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>|</span>
+    </span>
+  )
+}
 
 export default function Hero() {
   const t = useTranslations('hero')
-
-  const renderText = (text: string) => {
-    const parts = text.split(/({|})/g)
-    let isGradient = false
-
-    return parts.map((part, i) => {
-      if (part === '{') { isGradient = true; return null }
-      if (part === '}') { isGradient = false; return null }
-      return isGradient ? (
-        <span key={i} className="text-gradient-brand">{part}</span>
-      ) : (
-        <span key={i}>{part}</span>
-      )
-    })
-  }
+  const phrases = t.raw('phrases') as string[]
 
   return (
     <section className="relative flex items-center pt-20 bg-[#0a0a0a] overflow-hidden min-h-[100svh] md:min-h-[90vh]">
-      {/* Wave background — desktop only */}
-      <div className="absolute inset-0 pointer-events-none hidden md:block">
-        <svg
-          className="absolute w-full h-full"
-          viewBox="0 0 1440 900"
-          preserveAspectRatio="xMidYMid slice"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#F5C54E" stopOpacity="0.18" />
-              <stop offset="100%" stopColor="#38BDE9" stopOpacity="0.14" />
-            </linearGradient>
-          </defs>
-          <path
-            d="M-40,240 C480,140 960,340 1480,240 L1480,740 C960,840 480,640 -40,740 Z"
-            fill="url(#waveGrad)"
-          />
-        </svg>
-      </div>
-
       <div className="relative z-10 wrapper w-full">
 
         {/* Mobile: 세로 스택 */}
@@ -54,8 +61,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-body font-black text-[30px] leading-[1.2] text-white whitespace-pre-line break-keep">
-              {renderText(t.raw('title'))}
+            <h1 className="font-body font-black text-[34px] leading-[1.25] text-white break-keep">
+              <span>{t('titlePrefix')}</span>
+              <br />
+              <Typewriter phrases={phrases} />
             </h1>
             <div className="mt-7">
               <a
@@ -91,8 +100,10 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="flex-1"
           >
-            <h1 className="font-body font-black text-[46px] leading-[1.2] text-white whitespace-pre-line break-keep max-w-xl">
-              {renderText(t.raw('title'))}
+            <h1 className="font-body font-black text-[54px] leading-[1.2] text-white break-keep max-w-xl">
+              <span>{t('titlePrefix')}</span>
+              <br />
+              <Typewriter phrases={phrases} />
             </h1>
             <div className="mt-10">
               <a
