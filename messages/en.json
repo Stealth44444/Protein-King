@@ -4,12 +4,7 @@
   },
   "hero": {
     "label": "PROTEIN KING",
-    "copies": [
-      "Shaker bottles\nare {so last year}",
-      "Forgot your powder?\n{We've got you covered}",
-      "Fresh protein.\n{Blended on demand.}",
-      "Touch. 10 seconds. Done.\n{The cleanest routine yet.}"
-    ],
+    "title": "A new revenue stream.\n{70 cm is all it takes.}",
     "cta": "Become a Partner →",
     "scroll": "Scroll to explore"
   },
@@ -19,10 +14,27 @@
     "col1": "RTD Showcase",
     "col2": "Protein King Station",
     "rows": [
-      { "left": "Low margin per serving", "right": "HK$25+ margin per cup" },
-      { "left": "Heavy restocking labour", "right": "Simple bulk powder refill" },
-      { "left": "HK$40–80 per bottle", "right": "HK$27.59 per serving" },
-      { "left": "Soy protein only", "right": "Whey protein, lower price" }
+      "High margin per cup?",
+      "Competitive pricing?",
+      "Whey protein available?",
+      "Easy to restock?",
+      "Zero installation cost?",
+      "Made fresh on demand?"
+    ]
+  },
+  "facilityTypes": {
+    "label": "WHO IT'S FOR",
+    "title": "Works for every\nfitness venue.",
+    "items": [
+      { "icon": "🏋️", "name": "Commercial Gym", "desc": "Passive revenue on every shake. Zero inventory to manage." },
+      { "icon": "🧘", "name": "Pilates Studio", "desc": "A premium amenity that keeps members loyal." },
+      { "icon": "⚡", "name": "CrossFit Box", "desc": "Fuel every WOD on-site. No carry-in, no excuse." },
+      { "icon": "🟡", "name": "F45 Studio", "desc": "Post-class fuel on-site. One small footprint, a big differentiator." },
+      { "icon": "🏃", "name": "HYROX Training", "desc": "For members who treat recovery as seriously as race day." },
+      { "icon": "🧗", "name": "Climbing Gym", "desc": "The golden hour is right off the wall. Instant recovery, instant loyalty." },
+      { "icon": "🎓", "name": "University Campus", "desc": "Student wellness at half the price. Fully unmanned." },
+      { "icon": "🏨", "name": "Hotel Fitness", "desc": "Elevate the guest experience. Zero extra staffing." },
+      { "icon": "🏢", "name": "Corporate Wellness", "desc": "Turn the office gym into an actual employee benefit." }
     ]
   },
   "benefits": {
@@ -31,75 +43,210 @@
       "gym": {
         "label": "Gym",
         "items": [
-          {
-            "num": "01",
-            "title": "Guaranteed monthly income",
-            "desc": "Revenue share with zero sales risk. No stocking, no tracking."
-          },
-          {
-            "num": "02",
-            "title": "Zero management overhead",
-            "desc": "No orders, no expiry checks. Maintenance handled by Protein King."
-          },
-          {
-            "num": "03",
-            "title": "Member retention",
-            "desc": "Instant post-workout nutrition. A unique amenity that keeps members coming back."
-          }
+          { "num": "01", "title": "Guaranteed monthly income", "desc": "Revenue share with zero sales risk. No stocking, no tracking." },
+          { "num": "02", "title": "Zero management overhead", "desc": "No orders, no expiry checks. Maintenance handled by Protein King." },
+          { "num": "03", "title": "Member retention", "desc": "Instant post-workout nutrition. A unique amenity that keeps members coming back." }
         ]
       },
       "university": {
         "label": "University",
         "items": [
-          {
-            "num": "01",
-            "title": "Student wellness boost",
-            "desc": "Fraction of the cost of convenience store RTDs. A real student health initiative."
-          },
-          {
-            "num": "02",
-            "title": "Fully unmanned",
-            "desc": "Zero staff involvement after installation. Protein King handles everything."
-          },
-          {
-            "num": "03",
-            "title": "Elevate your facilities",
-            "desc": "Transform a gym space into a complete recovery destination."
-          }
+          { "num": "01", "title": "Student wellness boost", "desc": "Fraction of the cost of convenience store RTDs. A real student health initiative." },
+          { "num": "02", "title": "Fully unmanned", "desc": "Zero staff involvement after installation. Protein King handles everything." },
+          { "num": "03", "title": "Elevate your facilities", "desc": "Transform a gym space into a complete recovery destination." }
         ]
       }
     }
   },
+  "testimonials": {
+    "label": "PARTNER VOICES",
+    "title": "Don't take our word for it.\nHear from the operators.",
+    "items": [
+      {
+        "name": "Alex Wong",
+        "handle": "@alexwong.hk",
+        "role": "CrossFit Box Owner · Mapo",
+        "time": "2d",
+        "initials": "AW",
+        "color": "#3B82F6",
+        "headline": "I haven't done a single thing since we installed it.",
+        "text": "CrossFit members are immediate — you bring something in, they react right away, good or bad. Protein King just settled in quietly from the first week. I didn't introduce it or promote it. Members found it on their own. Nothing comes in from the ops side either, so I just stopped thinking about it. I've done absolutely nothing since we installed it, and it's still running. Honestly, that's what real convenience feels like.",
+        "replies": "14",
+        "retweets": "9",
+        "likes": "124"
+      },
+      {
+        "name": "Sarah Chan",
+        "handle": "@sarahchan.pilates",
+        "role": "Pilates Studio Owner · Ulsan",
+        "time": "5d",
+        "initials": "SC",
+        "color": "#EC4899",
+        "headline": "The atmosphere changed.",
+        "text": "After class, members would say goodbye and walk straight out. That always felt like a missed opportunity. Since Protein King came in, people started lingering — waiting for their drink, chatting with other members. The studio energy naturally carried past the session. The revenue is great, but that shift in atmosphere was honestly the bigger surprise.",
+        "replies": "7",
+        "retweets": "5",
+        "likes": "89"
+      },
+      {
+        "name": "Kevin Choi",
+        "handle": "@kevchoi.gym",
+        "role": "Gym Owner · Sydney",
+        "time": "1w",
+        "initials": "KC",
+        "color": "#10B981",
+        "stars": 5,
+        "headline": "I've never once thought it was the wrong call.",
+        "text": "We tried RTD showcases first, and honestly, it wasn't what I expected. Inventory was a hassle, margins were thinner than I thought, and it just created more work for staff. Switching to Protein King made all of that disappear. Members actually prefer it over buying RTDs. I've never once thought it was the wrong call.",
+        "replies": "22",
+        "retweets": "18",
+        "likes": "203"
+      },
+      {
+        "name": "Jenny Ng",
+        "handle": "@jenny.ng.sports",
+        "role": "University Sports Director · Songpa",
+        "time": "2w",
+        "initials": "JN",
+        "color": "#8B5CF6",
+        "headline": "The bigger the facility, the more this matters.",
+        "text": "At scale, operational simplicity is everything. Every time we bring something in here, it creates a staff member, and complaints follow. With Protein King, there's been zero maintenance contact in two months. Restocking just happens. The bigger the facility, the more something like this matters.",
+        "replies": "5",
+        "retweets": "3",
+        "likes": "67"
+      },
+      {
+        "name": "David Lam",
+        "handle": "@dlam.fitness",
+        "role": "Hotel Fitness Manager · Gwanak",
+        "time": "3d",
+        "initials": "DL",
+        "color": "#F59E0B",
+        "headline": "Operations approved it faster than I expected.",
+        "text": "In hotel fitness, anything you bring in needs operations sign-off first. Does it add labour costs? Who handles cleaning and maintenance? All of that has to be sorted. Protein King checked every box: no cost, self-managed maintenance, automated settlement. Operations approved it faster than I expected.",
+        "replies": "31",
+        "retweets": "27",
+        "likes": "341"
+      },
+      {
+        "name": "Jimin Lee",
+        "handle": "@jimin.climb",
+        "role": "Climbing Gym Owner · Queens Park",
+        "time": "4d",
+        "initials": "JM",
+        "color": "#EC4899",
+        "headline": "It solved a need I couldn't figure out how to fill.",
+        "text": "Climbing is high-intensity — members always want something right after they come off the wall. But there was never a clean solution. A protein bar shelf felt off. Stacking RTDs was awkward. Protein King just solved it cleanly. Members love it, and not having to manage it myself is honestly one of the biggest draws.",
+        "replies": "12",
+        "retweets": "8",
+        "likes": "114"
+      }
+    ]
+  },
+  "process": {
+    "label": "HOW TO START",
+    "title": "Four steps\nto your first cup.",
+    "steps": [
+      { "num": "01", "title": "Enquiry", "desc": "Fill out the form. We'll reach out within 1–2 business days." },
+      { "num": "02", "title": "Site Assessment", "desc": "Our team visits your facility to confirm placement and setup." },
+      { "num": "03", "title": "Installation", "desc": "Machine installed at zero cost. We handle everything." },
+      { "num": "04", "title": "Revenue Begins", "desc": "Revenue share starts from day one. No stocking, no hassle." }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions answered\nbefore you ask.",
+    "items": [
+      {
+        "q": "How does the revenue share work?",
+        "a": "Revenue is shared as a percentage of sales, with the exact rate negotiated during consultation based on your facility. Monthly payouts. A flat space rental fee model is also available — both can be discussed during consultation."
+      },
+      {
+        "q": "Is installation really free?",
+        "a": "Yes. The machine, delivery, and installation are all covered by Protein King. No deposit, no conditions — completely free."
+      },
+      {
+        "q": "Who handles maintenance and repairs?",
+        "a": "Protein King covers everything — repairs, parts, and all after-sales service. You don't need to contact anyone or pay anything."
+      },
+      {
+        "q": "Who refills the protein powder?",
+        "a": "Protein King monitors stock levels and handles all refills. You don't need to track inventory or make any requests. Arrangements can be adjusted based on your facility."
+      },
+      {
+        "q": "Is there a minimum contract term?",
+        "a": "The minimum term is 1 year. After that, renewal is agreed upon by both parties."
+      },
+      {
+        "q": "What types of facilities can apply?",
+        "a": "No specific requirements. Any fitness-related facility can apply, regardless of size."
+      },
+      {
+        "q": "Which regions do you serve?",
+        "a": "We currently serve all areas in Hong Kong, South Korea, and Australia."
+      }
+    ]
+  },
   "apply": {
-    "title": "Start today.\nFree consultation.",
+    "title": "Just give us 70 cm.\nWe'll handle the rest.",
     "subtitle": "More than a vending machine — a partnership that grows your revenue and your members' experience.",
     "note1": "Our team will reach out within 1–2 business days after your enquiry.",
     "note2": "We'll walk you through the revenue model, installation, and any questions.",
     "note3": "Consultation is free, with no obligation to proceed.",
+    "sectionBusiness": "Business Info",
+    "sectionContact": "Contact Details",
+    "sectionFacility": "About Your Facility",
     "fields": {
-      "name": "Name",
+      "businessName": "Business Name",
+      "branchName": "Branch / Location",
+      "contactName": "Contact Person",
       "phone": "Phone",
       "email": "Email",
-      "gym": "Facility Name",
-      "details": "Details",
-      "detailsOptional": "(Optional)",
-      "namePlaceholder": "Your name",
+      "address": "Address",
+      "memberCount": "Member Count",
+      "inquiry": "Inquiry",
+      "branchNameOptional": "(Optional)",
+      "addressOptional": "(Optional)",
+      "inquiryOptional": "(Optional)",
+      "businessNamePlaceholder": "e.g. Gold's Gym HK",
+      "branchNamePlaceholder": "e.g. Causeway Bay branch",
+      "contactNamePlaceholder": "Your full name",
       "phonePlaceholder": "+852 1234 5678",
-      "emailPlaceholder": "example@email.com",
-      "gymPlaceholder": "Gym or organisation name",
-      "detailsPlaceholder": "Size, location, or any questions"
+      "emailPlaceholder": "you@example.com",
+      "addressPlaceholder": "Full facility address",
+      "memberCountPlaceholder": "Select range",
+      "inquiryPlaceholder": "Anything specific you'd like to know?"
     },
+    "memberCounts": ["Under 100", "100 – 300", "300 – 500", "500+"],
     "submit": "Request Free Consultation",
     "submitting": "Sending...",
     "successTitle": "Enquiry received!",
     "successDesc": "Our consultant will be in touch with a full info pack.",
-    "errorName": "Please enter your name.",
+    "errorBusinessName": "Please enter your business name.",
+    "errorContactName": "Please enter your name.",
     "errorPhone": "Please enter your phone number.",
     "errorEmail": "Please enter your email.",
     "errorSend": "Failed to send. Please try again."
   },
   "footer": {
+    "tagline": "The global instant protein blending brand.",
     "copy": "© 2025 Protein King"
+  },
+  "certifications": {
+    "title": "10 international certifications.\nBuilt to a standard.",
+    "subtitle": "The JK91 holds safety certifications across European, US, UK, and international standards.",
+    "items": [
+      { "name": "CE", "desc": "European electrical & mechanical safety compliance" },
+      { "name": "CB", "desc": "International electrical safety testing" },
+      { "name": "FCC", "desc": "US Federal Communications Commission EMC certification" },
+      { "name": "UL", "desc": "Underwriters Laboratories safety certification" },
+      { "name": "ISO 9001", "desc": "International quality management system" },
+      { "name": "SGS", "desc": "Global inspection, testing & certification" },
+      { "name": "UKCA", "desc": "UK Conformity Assessed certification" },
+      { "name": "ETL Intertek", "desc": "North American safety & performance certification" },
+      { "name": "FDA", "desc": "US FDA food-contact material safety" },
+      { "name": "RoHS", "desc": "Restriction of hazardous substances compliance" }
+    ]
   },
   "howItWorks": {
     "label": "How It Works",
@@ -121,16 +268,6 @@
       { "label": "Connectivity", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
     ]
   },
-  "process": {
-    "label": "HOW TO START",
-    "title": "Four steps to\nyour first cup.",
-    "steps": [
-      { "num": "01", "title": "Enquiry", "desc": "Fill out the form. We'll reach out within 1–2 business days." },
-      { "num": "02", "title": "Site Assessment", "desc": "Our team visits your facility to confirm placement and setup." },
-      { "num": "03", "title": "Installation", "desc": "Machine installed at zero cost. We handle everything." },
-      { "num": "04", "title": "Revenue Begins", "desc": "Revenue share starts from day one. No stocking, no hassle." }
-    ]
-  },
   "machineGallery": {
     "title": "Trusted hardware,\nproven safety.",
     "subtitle": "Built to run unattended. The JK91 is engineered for continuous operation — from precision blending to hygiene, every component is held to a strict standard.",
@@ -140,5 +277,40 @@
       { "label": "Mixing Modes", "value": "Fixed / Moving / Intermittent / Upgraded" },
       { "label": "Environment", "value": "5–35°C, ≤80% RH" }
     ]
+  },
+  "profit": {
+    "label": "REVENUE STRUCTURE",
+    "title": "One space.\nThat's all.",
+    "subtitle": "Installation, operations, and settlement are all handled by Protein King.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Members purchase directly",
+        "desc": "Members choose and pay at the kiosk instantly. No staff involvement is required."
+      },
+      {
+        "num": "02",
+        "title": "Protein King handles everything",
+        "desc": "We take care of powder restocking, machine maintenance, and payments. You do nothing."
+      },
+      {
+        "num": "03",
+        "title": "Revenue comes in automatically",
+        "desc": "Payouts are deposited directly into your bank account on a set date every month."
+      }
+    ],
+    "tableHeaders": {
+      "item": "Item",
+      "brand": "Protein King",
+      "center": "Center"
+    },
+    "tableRows": [
+      { "name": "Machine Installation & Setup", "brand": true, "center": false },
+      { "name": "Regular Product Refilling", "brand": true, "center": false },
+      { "name": "Maintenance & Repairs", "brand": true, "center": false },
+      { "name": "Payments & Settlement", "brand": true, "center": false },
+      { "name": "Provide Space (70 cm)", "brand": false, "center": true }
+    ],
+    "footnote": "* Revenue share ratios are negotiated individually during contract setup based on facility scale."
   }
 }

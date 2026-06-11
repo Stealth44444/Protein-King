@@ -4,25 +4,37 @@
   },
   "hero": {
     "label": "PROTEIN KING",
-    "copies": [
-      "搖搖杯係舊時代嘅嘢，\n{而家唔使喇}",
-      "唔記得帶蛋白粉？\n{我哋幫你搞掂}",
-      "即場新鮮製作，\n{蛋白補充唔等人}",
-      "一掹，十秒，完成。\n{最整潔嘅訓練流程}"
-    ],
+    "title": "開拓新收入，\n{70厘米就夠晒}",
     "cta": "立即申請合作 →",
     "scroll": "向下滾動"
   },
   "comparison": {
-    "title": "唔好再用陳列櫃喇，\n試吓Protein King。",
+    "title": "唔好再用陳列櫃喇，\n試吓 Protein King。",
     "subtitle": "衝破RTD飲品嘅低利潤困局，用Protein King嘅自動化系統令你嘅場地收益最大化。",
     "col1": "舊式RTD陳列櫃",
     "col2": "Protein King 補給站",
     "rows": [
-      { "left": "每杯利潤偏低", "right": "每杯利潤逾HK$25" },
-      { "left": "入貨補貨工作繁重", "right": "大包裝蛋白粉，補充簡單" },
-      { "left": "每支HK$40–80", "right": "每杯HK$27.59" },
-      { "left": "只含大豆蛋白", "right": "乳清蛋白，價格更低" }
+      "每杯利潤高？",
+      "價格有競爭力？",
+      "提供乳清蛋白？",
+      "補貨方便？",
+      "安裝費用全免？",
+      "即場即製？"
+    ]
+  },
+  "facilityTypes": {
+    "label": "適合場地",
+    "title": "任何健身場地\n都啱用。",
+    "items": [
+      { "icon": "🏋️", "name": "健身室", "desc": "每杯被動收入，零庫存管理。" },
+      { "icon": "🧘", "name": "普拉提工作室", "desc": "留住會員嘅高端設施配套。" },
+      { "icon": "⚡", "name": "CrossFit 健身操", "desc": "即場補給，完美訓練流程。" },
+      { "icon": "🟡", "name": "F45 訓練室", "desc": "團體功能訓練後即時補充，小空間大差異化。" },
+      { "icon": "🏃", "name": "HYROX 訓練中心", "desc": "為追求表現嘅會員提供比賽日以外嘅補給方案。" },
+      { "icon": "🧗", "name": "攀石館", "desc": "落牆即係黃金時間，即場補充提升會員滿意度。" },
+      { "icon": "🎓", "name": "大學校園", "desc": "學生健康，半價，全程無人。" },
+      { "icon": "🏨", "name": "酒店健身房", "desc": "零額外人手，提升賓客體驗。" },
+      { "icon": "🏢", "name": "企業康健室", "desc": "將辦公室健身房變成真正福利。" }
     ]
   },
   "benefits": {
@@ -31,75 +43,210 @@
       "gym": {
         "label": "健身室",
         "items": [
-          {
-            "num": "01",
-            "title": "穩定每月收入",
-            "desc": "收益分成，零銷售風險。唔使入貨，唔使追數。"
-          },
-          {
-            "num": "02",
-            "title": "零管理負擔",
-            "desc": "唔使落單、唔使查到期日。維修保養由Protein King全程負責。"
-          },
-          {
-            "num": "03",
-            "title": "留住會員",
-            "desc": "訓練後即時補充蛋白質，獨家設施令會員唔捨得走。"
-          }
+          { "num": "01", "title": "穩定每月收入", "desc": "收益分成，零銷售風險。唔使入貨，唔使追數。" },
+          { "num": "02", "title": "零管理負擔", "desc": "唔使落單、唔使查到期日。維修保養由Protein King全程負責。" },
+          { "num": "03", "title": "留住會員", "desc": "訓練後即時補充蛋白質，獨家設施令會員唔捨得走。" }
         ]
       },
       "university": {
         "label": "大學",
         "items": [
-          {
-            "num": "01",
-            "title": "提升學生福祉指標",
-            "desc": "價格遠低於便利店RTD飲品，真正嘅學生健康計劃。"
-          },
-          {
-            "num": "02",
-            "title": "完全無人管理",
-            "desc": "安裝後唔需要任何員工介入，由Protein King全程處理。"
-          },
-          {
-            "num": "03",
-            "title": "提升設施價值",
-            "desc": "由普通健身房升級成照顧全面恢復嘅高端場地。"
-          }
+          { "num": "01", "title": "提升學生福祉指標", "desc": "價格遠低於便利店RTD飲品，真正嘅學生健康計劃。" },
+          { "num": "02", "title": "完全無人管理", "desc": "安裝後唔需要任何員工介入，由Protein King全程處理。" },
+          { "num": "03", "title": "提升設施價值", "desc": "由普通健身房升級成照顧全面恢復嘅高端場地。" }
         ]
       }
     }
   },
+  "testimonials": {
+    "label": "合作夥伴評價",
+    "title": "唔係我哋自吹，\n聽場地營運者親口講。",
+    "items": [
+      {
+        "name": "Alex Wong",
+        "handle": "@alexwong.hk",
+        "role": "CrossFit 健身操館主 · 麻浦",
+        "time": "2d",
+        "initials": "AW",
+        "color": "#3B82F6",
+        "headline": "引入之後我乜都冇做過。",
+        "text": "CrossFit 嘅會員反應特別直接，引進任何嘢佢哋即刻有反應，好唔好睇得出嘅。Protein King 第一個星期就靜靜地融入咗。我冇特別介紹，冇宣傳，會員自己去用。運營管理方面都冇聯絡過我，我就完全放低咗。引入之後我乜都冇做過，但佢係度運行緊。誠實講，呢個先係真正嘅方便。",
+        "replies": "14",
+        "retweets": "9",
+        "likes": "124"
+      },
+      {
+        "name": "Sarah Chan",
+        "handle": "@sarahchan.pilates",
+        "role": "普拉提館主 · 蔚山",
+        "time": "5d",
+        "initials": "SC",
+        "color": "#EC4899",
+        "headline": "氣氛改變咗。",
+        "text": "平時堂後會員打個招呼就走，我一直覺得有啲可惜。Protein King 引入之後，有人開始喺度等飲品，順手同其他會員傾兩句。堂後嘅氣氛自然地延續落去，唔會即刻散。收益固然好，但呢個氣氛嘅改變其實係更大嘅驚喜。",
+        "replies": "7",
+        "retweets": "5",
+        "likes": "89"
+      },
+      {
+        "name": "Kevin Choi",
+        "handle": "@kevchoi.gym",
+        "role": "健身室館主 · 悉尼",
+        "time": "1w",
+        "initials": "KC",
+        "color": "#10B981",
+        "stars": 5,
+        "headline": "我從來冇後悔過呢個決定。",
+        "text": "之前試過 RTD 陳列櫃，老實講冇達到預期。庫存好麻煩，利潤比想像中少，員工要額外打理嘅嘢又多咗。轉用 Protein King 之後，呢啲問題全部消失咗。會員嘅反應比買 RTD 時好得多。我從來冇後悔過呢個決定。",
+        "replies": "22",
+        "retweets": "18",
+        "likes": "203"
+      },
+      {
+        "name": "Jenny Ng",
+        "handle": "@jenny.ng.sports",
+        "role": "大學體育部主管 · 松坡",
+        "time": "2w",
+        "initials": "JN",
+        "color": "#8B5CF6",
+        "headline": "場地愈大，呢樣嘢愈重要。",
+        "text": "場地規模大，運營負擔低先係第一位。我管緊大學體育部，每次引入新嘢都會有員工跟進、有投訴跟住嚟。Protein King 兩個月冇收過任何維修聯絡，補貨自動上門補好。場地愈大，呢種事愈重要。",
+        "replies": "5",
+        "retweets": "3",
+        "likes": "67"
+      },
+      {
+        "name": "David Lam",
+        "handle": "@dlam.fitness",
+        "role": "酒店健身房經理 · 冠岳",
+        "time": "3d",
+        "initials": "DL",
+        "color": "#F59E0B",
+        "headline": "運營審批比預期快得多。",
+        "text": "酒店健身引入任何東西，都要先過運營部。有冇額外人工？清潔維修由邊個負責？呢啲問題全部要答到先可以通過。Protein King 每個條件都符合：零費用、自行解決維修、自動結算。運營審批比我預期快得多。",
+        "replies": "31",
+        "retweets": "27",
+        "likes": "341"
+      },
+      {
+        "name": "李智敏",
+        "handle": "@jimin.climb",
+        "role": "攀石場館主 · 昆士柏",
+        "time": "4d",
+        "initials": "JM",
+        "color": "#EC4899",
+        "headline": "完美解決咗一個我一直搵唔到答案嘅需求。",
+        "text": "攀石強度高，落牆之後即刻想補充係必然嘅。但一直冇一個好嘅方案。放幾條 bar 感覺唔啱，擺 RTD 又尷尬。Protein King 引入之後，呢個需求乾淨俐落地解決咗，會員反應真係好好。唔需要自己親力親為去管，呢個係最大嘅優點。",
+        "replies": "12",
+        "retweets": "8",
+        "likes": "114"
+      }
+    ]
+  },
+  "process": {
+    "label": "點樣開始",
+    "title": "四個步驟，\n第一杯就嚟。",
+    "steps": [
+      { "num": "01", "title": "提交查詢", "desc": "填寫表格，我哋會喺1–2個工作天內聯絡你。" },
+      { "num": "02", "title": "場地評估", "desc": "我哋嘅團隊親身到場確認擺放位置及安裝細節。" },
+      { "num": "03", "title": "免費安裝", "desc": "機器零費用安裝，一切由我哋負責。" },
+      { "num": "04", "title": "開始分成", "desc": "即日起計收益分成，唔使入貨，唔使煩惱。" }
+    ]
+  },
+  "faq": {
+    "label": "常見問題",
+    "title": "你想問嘅，\n我哋先答你。",
+    "items": [
+      {
+        "q": "收益分成係點計？",
+        "a": "按銷售額嘅百分比分成，確實比例會喺諮詢過程中根據場地規模協商。每月結算。亦可以場地租金方式代替，同樣可喺諮詢時商議。"
+      },
+      {
+        "q": "安裝真係免費？",
+        "a": "係。機器、送貨、安裝人工全部由Protein King全額負責，冇按金、冇附帶條件，完全免費。"
+      },
+      {
+        "q": "機器壞咗點辦？",
+        "a": "故障、維修、零件更換、售後服務全部由Protein King負責。場地唔需要聯絡任何人或支付任何費用。"
+      },
+      {
+        "q": "粉末係由邊個補充？",
+        "a": "由Protein King負責監察存貨並安排所有補充。你唔需要追蹤或提出任何要求。具體安排可根據場地情況協商。"
+      },
+      {
+        "q": "有冇最短合約期？",
+        "a": "最短合約期係1年。之後續約由雙方協商決定。"
+      },
+      {
+        "q": "咩場地可以申請？",
+        "a": "冇特別條件。任何健身相關場地均可申請，不論規模大小。"
+      },
+      {
+        "q": "服務覆蓋邊些地區？",
+        "a": "目前服務香港、大韓民國及澳洲全境。"
+      }
+    ]
+  },
   "apply": {
-    "title": "即刻開始，\n免費諮詢。",
+    "title": "只需70厘米，\n其餘由我哋搞掂。",
     "subtitle": "唔止係自動販賣機——係一個幫你增加收入同提升會員體驗嘅合作關係。",
     "note1": "收到申請後，我哋嘅團隊會喺1–2個工作天內聯絡你。",
     "note2": "我哋會詳細解釋收益模式、安裝流程同其他問題。",
     "note3": "諮詢完全免費，唔需要即時承諾。",
+    "sectionBusiness": "商業資訊",
+    "sectionContact": "聯絡資料",
+    "sectionFacility": "場地詳情",
     "fields": {
-      "name": "姓名",
-      "phone": "電話",
-      "email": "電郵",
-      "gym": "場地名稱",
-      "details": "其他資料",
-      "detailsOptional": "（選填）",
-      "namePlaceholder": "你嘅名字",
+      "businessName": "商號名稱",
+      "branchName": "分店名稱",
+      "contactName": "負責人姓名",
+      "phone": "聯絡電話",
+      "email": "電郵地址",
+      "address": "地址",
+      "memberCount": "會員規模",
+      "inquiry": "查詢內容",
+      "branchNameOptional": "（選填）",
+      "addressOptional": "（選填）",
+      "inquiryOptional": "（選填）",
+      "businessNamePlaceholder": "例：健身工廠銅鑼灣",
+      "branchNamePlaceholder": "例：銅鑼灣分店",
+      "contactNamePlaceholder": "你嘅全名",
       "phonePlaceholder": "+852 1234 5678",
       "emailPlaceholder": "example@email.com",
-      "gymPlaceholder": "健身室或機構名稱",
-      "detailsPlaceholder": "場地規模、位置或其他問題"
+      "addressPlaceholder": "場地完整地址",
+      "memberCountPlaceholder": "選擇會員人數範圍",
+      "inquiryPlaceholder": "有冇特別想了解嘅嘢？"
     },
+    "memberCounts": ["100人以下", "100 – 300人", "300 – 500人", "500人以上"],
     "submit": "申請免費諮詢",
     "submitting": "傳送中...",
     "successTitle": "查詢已收到！",
     "successDesc": "我哋嘅顧問會盡快聯絡你並提供詳細資料。",
-    "errorName": "請輸入你嘅姓名。",
-    "errorPhone": "請輸入你嘅電話號碼。",
-    "errorEmail": "請輸入你嘅電郵地址。",
+    "errorBusinessName": "請輸入商號名稱。",
+    "errorContactName": "請輸入負責人姓名。",
+    "errorPhone": "請輸入聯絡電話。",
+    "errorEmail": "請輸入電郵地址。",
     "errorSend": "傳送失敗，請再試一次。"
   },
   "footer": {
+    "tagline": "全球即溶蛋白質混合品牌。",
     "copy": "© 2025 Protein King"
+  },
+  "certifications": {
+    "title": "10項國際認證，\n安全有保證。",
+    "subtitle": "JK91 持有歐洲、美國、英國及國際標準嘅全面安全認證。",
+    "items": [
+      { "name": "CE", "desc": "歐洲電氣及機械安全標準認證" },
+      { "name": "CB", "desc": "國際電氣產品安全測試認證" },
+      { "name": "FCC", "desc": "美國聯邦通訊委員會電磁兼容認證" },
+      { "name": "UL", "desc": "美國保險商實驗室安全認證" },
+      { "name": "ISO 9001", "desc": "國際品質管理體系認證" },
+      { "name": "SGS", "desc": "全球檢驗、測試及認證機構核准" },
+      { "name": "UKCA", "desc": "英國合規評估認證" },
+      { "name": "ETL Intertek", "desc": "北美安全及性能認證" },
+      { "name": "FDA", "desc": "美國食品藥物管理局食品接觸材料安全認證" },
+      { "name": "RoHS", "desc": "限制有害物質使用指令合規" }
+    ]
   },
   "howItWorks": {
     "label": "How It Works",
@@ -110,7 +257,7 @@
     ]
   },
   "productDetail": {
-    "title": "最智能嘅機器，\n成就你品牌嘅格調。",
+    "title": "最智能嘅機器\n成就你嘅品牌格調。",
     "subtitle": "30至70秒即場製作。3°C凍飲到90°C熱飲，隨意調節。Android 11配備Wi-Fi及藍牙——專為無人運作而設計。",
     "specs": [
       { "label": "機身尺寸", "value": "W 700 × D 740 × H 1905 mm" },
@@ -119,16 +266,6 @@
       { "label": "容量", "value": "大桶5個(4L) + 小桶4個(2.2L)" },
       { "label": "電力", "value": "1800W / AC 220V" },
       { "label": "連接", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
-    ]
-  },
-  "process": {
-    "label": "點樣開始",
-    "title": "四個步驟，\n第一杯即將到來。",
-    "steps": [
-      { "num": "01", "title": "提交查詢", "desc": "填寫表格，我哋會喺1–2個工作天內聯絡你。" },
-      { "num": "02", "title": "場地評估", "desc": "我哋嘅團隊親身到場確認擺放位置及安裝細節。" },
-      { "num": "03", "title": "免費安裝", "desc": "機器零費用安裝，一切由我哋負責。" },
-      { "num": "04", "title": "開始分成", "desc": "即日起計收益分成，唔使入貨，唔使煩惱。" }
     ]
   },
   "machineGallery": {
@@ -140,5 +277,40 @@
       { "label": "混合模式", "value": "固定 / 移動 / 間歇 / 升級算法" },
       { "label": "使用環境", "value": "5–35°C，濕度≤80%" }
     ]
+  },
+  "profit": {
+    "label": "收益分成",
+    "title": "場地只需\n一個空間。",
+    "subtitle": "安裝、運作、結算全部由 Protein King 負責。",
+    "steps": [
+      {
+        "num": "01",
+        "title": "會員直接購買",
+        "desc": "喺自助機選擇並即時付款，場地完全唔需要介入。"
+      },
+      {
+        "num": "02",
+        "title": "Protein King 處理一切",
+        "desc": "我哋負責補貨、機器保養同款項結算，你完全唔需要操心。"
+      },
+      {
+        "num": "03",
+        "title": "收益自動到帳",
+        "desc": "每月固定日期自動存入你嘅銀行戶口，唔使特別申請。"
+      }
+    ],
+    "tableHeaders": {
+      "item": "項目",
+      "brand": "Protein King",
+      "center": "場地"
+    },
+    "tableRows": [
+      { "name": "機器安裝及佈置", "brand": true, "center": false },
+      { "name": "產品定期補貨", "brand": true, "center": false },
+      { "name": "維修及保養", "brand": true, "center": false },
+      { "name": "付款及結算", "brand": true, "center": false },
+      { "name": "提供空間（70厘米）", "brand": false, "center": true }
+    ],
+    "footnote": "* 分成比例會根據場地規模及環境喺簽約時個別協商。"
   }
 }

@@ -4,8 +4,11 @@ import Hero from '@/components/sections/Hero'
 import ProductDetail from '@/components/sections/ProductDetail'
 import MachineGallery from '@/components/sections/MachineGallery'
 import Comparison from '@/components/sections/Comparison'
+import FacilityTypes from '@/components/sections/FacilityTypes'
+import Profit from '@/components/sections/Profit'
 import Process from '@/components/sections/Process'
-import Benefits from '@/components/sections/Benefits'
+import Testimonials from '@/components/sections/Testimonials'
+import FAQ from '@/components/sections/FAQ'
 import ApplyForm from '@/components/sections/ApplyForm'
 
 export default function LocalePage() {
@@ -17,8 +20,11 @@ export default function LocalePage() {
         <ProductDetail />
         <MachineGallery />
         <Comparison />
+        <FacilityTypes />
+        <Profit />
         <Process />
-        <Benefits />
+        <Testimonials />
+        <FAQ />
         <ApplyForm />
       </main>
       <Footer />

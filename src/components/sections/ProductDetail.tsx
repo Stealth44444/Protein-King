@@ -17,13 +17,13 @@ export default function ProductDetail() {
   const titleLines = t('title').split('\n')
 
   return (
-    <section className="relative py-24 bg-white overflow-hidden text-brand-dark">
+    <section className="relative py-24 bg-brand-dark overflow-hidden text-white">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 container mx-auto px-8 md:px-16"
+        className="relative z-10 wrapper"
       >
         <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
 
@@ -34,7 +34,7 @@ export default function ProductDetail() {
             viewport={{ once: true }}
             className="w-full md:w-1/2 flex justify-center"
           >
-            <div className="relative w-[300px] h-[550px] md:w-[450px] md:h-[800px]">
+            <div className="relative w-[180px] h-[340px] md:w-[450px] md:h-[800px]">
               <Image
                 src="/machine.png"
                 alt="Protein King Machine"
@@ -51,7 +51,7 @@ export default function ProductDetail() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-body font-black text-3xl md:text-5xl text-brand-dark mb-6 leading-tight break-keep">
+              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight break-keep">
                 {titleLines.map((line, i) =>
                   i === titleLines.length - 1 ? (
                     <span key={i} className="text-gradient-brand">{line}</span>
@@ -60,18 +60,14 @@ export default function ProductDetail() {
                   )
                 )}
               </h2>
-              <p className="font-body text-gray-500 text-base md:text-lg leading-relaxed mb-10 md:mb-12 max-w-lg">
-                {t('subtitle')}
-              </p>
-
               {/* 스펙 그리드 */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 border-t border-gray-100 pt-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 border-t border-white/10 pt-10">
                 {specs.map((spec, index) => (
                   <div key={index} className="space-y-1">
-                    <p className="font-body text-[9px] uppercase tracking-widest text-gray-400 font-medium">
+                    <p className="font-body text-xs uppercase text-gray-500 font-medium break-keep">
                       {spec.label}
                     </p>
-                    <p className="font-body text-base font-medium text-brand-dark">
+                    <p className="font-body text-base font-medium text-white break-keep">
                       {spec.value}
                     </p>
                   </div>
