@@ -39,7 +39,7 @@ function Typewriter({ phrases }: { phrases: string[] }) {
   }, [])
 
   return (
-    <span className="text-gradient-brand">
+    <span className="text-gradient-brand whitespace-nowrap">
       {text}
       <span className={`${blink ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>|</span>
     </span>
