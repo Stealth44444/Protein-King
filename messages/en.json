@@ -6,7 +6,6 @@
     "label": "PROTEIN KING",
     "titlePrefix": "Just give us 70 cm.",
     "phrases": [
-      "70 cm is all it takes.",
       "Zero installation cost.",
       "We handle everything.",
       "Revenue from day one."
@@ -32,15 +31,51 @@
     "label": "WHO IT'S FOR",
     "title": "Works for every\nfitness venue.",
     "items": [
-      { "icon": "🏋️", "name": "Commercial Gym", "desc": "Passive revenue on every shake. Zero inventory to manage." },
-      { "icon": "🧘", "name": "Pilates Studio", "desc": "A premium amenity that keeps members loyal." },
-      { "icon": "⚡", "name": "CrossFit Box", "desc": "Fuel every WOD on-site. No carry-in, no excuse." },
-      { "icon": "🟡", "name": "F45 Studio", "desc": "Post-class fuel on-site. One small footprint, a big differentiator." },
-      { "icon": "🏃", "name": "HYROX Training", "desc": "For members who treat recovery as seriously as race day." },
-      { "icon": "🧗", "name": "Climbing Gym", "desc": "The golden hour is right off the wall. Instant recovery, instant loyalty." },
-      { "icon": "🎓", "name": "University Campus", "desc": "Student wellness at half the price. Fully unmanned." },
-      { "icon": "🏨", "name": "Hotel Fitness", "desc": "Elevate the guest experience. Zero extra staffing." },
-      { "icon": "🏢", "name": "Corporate Wellness", "desc": "Turn the office gym into an actual employee benefit." }
+      {
+        "icon": "🏋️",
+        "name": "Commercial Gym",
+        "desc": "Passive revenue on every shake. Zero inventory to manage."
+      },
+      {
+        "icon": "🧘",
+        "name": "Pilates Studio",
+        "desc": "A premium amenity that keeps members loyal."
+      },
+      {
+        "icon": "⚡",
+        "name": "CrossFit Box",
+        "desc": "Fuel every WOD on-site. No carry-in, no excuse."
+      },
+      {
+        "icon": "🟡",
+        "name": "F45 Studio",
+        "desc": "Post-class fuel on-site. One small footprint, a big differentiator."
+      },
+      {
+        "icon": "🏃",
+        "name": "HYROX Training",
+        "desc": "For members who treat recovery as seriously as race day."
+      },
+      {
+        "icon": "🧗",
+        "name": "Climbing Gym",
+        "desc": "The golden hour is right off the wall. Instant recovery, instant loyalty."
+      },
+      {
+        "icon": "🎓",
+        "name": "University Campus",
+        "desc": "Student wellness at half the price. Fully unmanned."
+      },
+      {
+        "icon": "🏨",
+        "name": "Hotel Fitness",
+        "desc": "Elevate the guest experience. Zero extra staffing."
+      },
+      {
+        "icon": "🏢",
+        "name": "Corporate Wellness",
+        "desc": "Turn the office gym into an actual employee benefit."
+      }
     ]
   },
   "benefits": {
@@ -49,17 +84,41 @@
       "gym": {
         "label": "Gym",
         "items": [
-          { "num": "01", "title": "Guaranteed monthly income", "desc": "Revenue share with zero sales risk. No stocking, no tracking." },
-          { "num": "02", "title": "Zero management overhead", "desc": "No orders, no expiry checks. Maintenance handled by Protein King." },
-          { "num": "03", "title": "Member retention", "desc": "Instant post-workout nutrition. A unique amenity that keeps members coming back." }
+          {
+            "num": "01",
+            "title": "Guaranteed monthly income",
+            "desc": "Revenue share with zero sales risk. No stocking, no tracking."
+          },
+          {
+            "num": "02",
+            "title": "Zero management overhead",
+            "desc": "No orders, no expiry checks. Maintenance handled by Protein King."
+          },
+          {
+            "num": "03",
+            "title": "Member retention",
+            "desc": "Instant post-workout nutrition. A unique amenity that keeps members coming back."
+          }
         ]
       },
       "university": {
         "label": "University",
         "items": [
-          { "num": "01", "title": "Student wellness boost", "desc": "Fraction of the cost of convenience store RTDs. A real student health initiative." },
-          { "num": "02", "title": "Fully unmanned", "desc": "Zero staff involvement after installation. Protein King handles everything." },
-          { "num": "03", "title": "Elevate your facilities", "desc": "Transform a gym space into a complete recovery destination." }
+          {
+            "num": "01",
+            "title": "Student wellness boost",
+            "desc": "Fraction of the cost of convenience store RTDs. A real student health initiative."
+          },
+          {
+            "num": "02",
+            "title": "Fully unmanned",
+            "desc": "Zero staff involvement after installation. Protein King handles everything."
+          },
+          {
+            "num": "03",
+            "title": "Elevate your facilities",
+            "desc": "Transform a gym space into a complete recovery destination."
+          }
         ]
       }
     }
@@ -153,10 +212,26 @@
     "label": "HOW TO START",
     "title": "Four steps\nto your first cup.",
     "steps": [
-      { "num": "01", "title": "Enquiry", "desc": "Fill out the form. We'll reach out within 1–2 business days." },
-      { "num": "02", "title": "Site Assessment", "desc": "Our team visits your facility to confirm placement and setup." },
-      { "num": "03", "title": "Installation", "desc": "Machine installed at zero cost. We handle everything." },
-      { "num": "04", "title": "Revenue Begins", "desc": "Revenue share starts from day one. No stocking, no hassle." }
+      {
+        "num": "01",
+        "title": "Enquiry",
+        "desc": "Fill out the form. We'll reach out within 1–2 business days."
+      },
+      {
+        "num": "02",
+        "title": "Site Assessment",
+        "desc": "Our team visits your facility to confirm placement and setup."
+      },
+      {
+        "num": "03",
+        "title": "Installation",
+        "desc": "Machine installed at zero cost. We handle everything."
+      },
+      {
+        "num": "04",
+        "title": "Revenue Begins",
+        "desc": "Revenue share starts from day one. No stocking, no hassle."
+      }
     ]
   },
   "faq": {
@@ -223,7 +298,12 @@
       "memberCountPlaceholder": "Select range",
       "inquiryPlaceholder": "Anything specific you'd like to know?"
     },
-    "memberCounts": ["Under 100", "100 – 300", "300 – 500", "500+"],
+    "memberCounts": [
+      "Under 100",
+      "100 – 300",
+      "300 – 500",
+      "500+"
+    ],
     "submit": "Request Free Consultation",
     "submitting": "Sending...",
     "successTitle": "Enquiry received!",
@@ -242,46 +322,118 @@
     "title": "10 international certifications.\nBuilt to a standard.",
     "subtitle": "The JK91 holds safety certifications across European, US, UK, and international standards.",
     "items": [
-      { "name": "CE", "desc": "European electrical & mechanical safety compliance" },
-      { "name": "CB", "desc": "International electrical safety testing" },
-      { "name": "FCC", "desc": "US Federal Communications Commission EMC certification" },
-      { "name": "UL", "desc": "Underwriters Laboratories safety certification" },
-      { "name": "ISO 9001", "desc": "International quality management system" },
-      { "name": "SGS", "desc": "Global inspection, testing & certification" },
-      { "name": "UKCA", "desc": "UK Conformity Assessed certification" },
-      { "name": "ETL Intertek", "desc": "North American safety & performance certification" },
-      { "name": "FDA", "desc": "US FDA food-contact material safety" },
-      { "name": "RoHS", "desc": "Restriction of hazardous substances compliance" }
+      {
+        "name": "CE",
+        "desc": "European electrical & mechanical safety compliance"
+      },
+      {
+        "name": "CB",
+        "desc": "International electrical safety testing"
+      },
+      {
+        "name": "FCC",
+        "desc": "US Federal Communications Commission EMC certification"
+      },
+      {
+        "name": "UL",
+        "desc": "Underwriters Laboratories safety certification"
+      },
+      {
+        "name": "ISO 9001",
+        "desc": "International quality management system"
+      },
+      {
+        "name": "SGS",
+        "desc": "Global inspection, testing & certification"
+      },
+      {
+        "name": "UKCA",
+        "desc": "UK Conformity Assessed certification"
+      },
+      {
+        "name": "ETL Intertek",
+        "desc": "North American safety & performance certification"
+      },
+      {
+        "name": "FDA",
+        "desc": "US FDA food-contact material safety"
+      },
+      {
+        "name": "RoHS",
+        "desc": "Restriction of hazardous substances compliance"
+      }
     ]
   },
   "howItWorks": {
     "label": "How It Works",
     "steps": [
-      { "num": "01", "title": "Load Powder", "desc": "Protein powder and skim milk powder are loaded into the machine." },
-      { "num": "02", "title": "Instant Blending", "desc": "Water and powder are automatically mixed inside the machine." },
-      { "num": "03", "title": "Cup Dispensed", "desc": "A fresh protein shake is dispensed in seconds." }
+      {
+        "num": "01",
+        "title": "Load Powder",
+        "desc": "Protein powder and skim milk powder are loaded into the machine."
+      },
+      {
+        "num": "02",
+        "title": "Instant Blending",
+        "desc": "Water and powder are automatically mixed inside the machine."
+      },
+      {
+        "num": "03",
+        "title": "Cup Dispensed",
+        "desc": "A fresh protein shake is dispensed in seconds."
+      }
     ]
   },
   "productDetail": {
     "title": "The smartest machine\ncompletes your brand.",
     "subtitle": "Fresh blends in 30–70 seconds. Cold or hot, 3°C to 90°C. Android 11 with Wi-Fi and Bluetooth — built for unattended operation.",
     "specs": [
-      { "label": "Dimensions", "value": "W 700 × D 740 × H 1905 mm" },
-      { "label": "Prep Time", "value": "30–70 seconds" },
-      { "label": "Temperature", "value": "3°C – Room Temp – 90°C" },
-      { "label": "Capacity", "value": "5 × 4L + 4 × 2.2L canisters" },
-      { "label": "Power", "value": "1800W / AC 220V" },
-      { "label": "Connectivity", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
+      {
+        "label": "Dimensions",
+        "value": "W 700 × D 740 × H 1905 mm"
+      },
+      {
+        "label": "Prep Time",
+        "value": "30–70 seconds"
+      },
+      {
+        "label": "Temperature",
+        "value": "3°C – Room Temp – 90°C"
+      },
+      {
+        "label": "Capacity",
+        "value": "5 × 4L + 4 × 2.2L canisters"
+      },
+      {
+        "label": "Power",
+        "value": "1800W / AC 220V"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0"
+      }
     ]
   },
   "machineGallery": {
     "title": "Trusted hardware,\nproven safety.",
     "subtitle": "Built to run unattended. The JK91 is engineered for continuous operation — from precision blending to hygiene, every component is held to a strict standard.",
     "specs": [
-      { "label": "OS", "value": "Android 11.0" },
-      { "label": "Memory", "value": "2 GB RAM / 32 GB ROM" },
-      { "label": "Mixing Modes", "value": "Fixed / Moving / Intermittent / Upgraded" },
-      { "label": "Environment", "value": "5–35°C, ≤80% RH" }
+      {
+        "label": "OS",
+        "value": "Android 11.0"
+      },
+      {
+        "label": "Memory",
+        "value": "2 GB RAM / 32 GB ROM"
+      },
+      {
+        "label": "Mixing Modes",
+        "value": "Fixed / Moving / Intermittent / Upgraded"
+      },
+      {
+        "label": "Environment",
+        "value": "5–35°C, ≤80% RH"
+      }
     ]
   },
   "profit": {
@@ -311,11 +463,31 @@
       "center": "Center"
     },
     "tableRows": [
-      { "name": "Machine Installation & Setup", "brand": true, "center": false },
-      { "name": "Regular Product Refilling", "brand": true, "center": false },
-      { "name": "Maintenance & Repairs", "brand": true, "center": false },
-      { "name": "Payments & Settlement", "brand": true, "center": false },
-      { "name": "Provide Space (70 cm)", "brand": false, "center": true }
+      {
+        "name": "Machine Installation & Setup",
+        "brand": true,
+        "center": false
+      },
+      {
+        "name": "Regular Product Refilling",
+        "brand": true,
+        "center": false
+      },
+      {
+        "name": "Maintenance & Repairs",
+        "brand": true,
+        "center": false
+      },
+      {
+        "name": "Payments & Settlement",
+        "brand": true,
+        "center": false
+      },
+      {
+        "name": "Provide Space (70 cm)",
+        "brand": false,
+        "center": true
+      }
     ],
     "footnote": "* Revenue share ratios are negotiated individually during contract setup based on facility scale."
   }
