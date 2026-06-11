@@ -62,9 +62,8 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1 className="font-body font-black text-[34px] leading-[1.25] text-white break-keep">
-              <span>{t('titlePrefix')}</span>
-              <br />
-              <Typewriter phrases={phrases} />
+              <span className="block">{t('titlePrefix')}</span>
+              <span className="block h-[1.25em]"><Typewriter phrases={phrases} /></span>
             </h1>
             <div className="mt-7">
               <a
@@ -101,9 +100,8 @@ export default function Hero() {
             className="flex-1"
           >
             <h1 className="font-body font-black text-[54px] leading-[1.2] text-white break-keep max-w-xl">
-              <span>{t('titlePrefix')}</span>
-              <br />
-              <Typewriter phrases={phrases} />
+              <span className="block">{t('titlePrefix')}</span>
+              <span className="block h-[1.2em]"><Typewriter phrases={phrases} /></span>
             </h1>
             <div className="mt-10">
               <a
