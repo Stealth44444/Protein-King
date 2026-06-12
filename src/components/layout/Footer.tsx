@@ -18,13 +18,7 @@ export default async function Footer() {
           {/* 이메일 */}
           <div className="space-y-2">
             <h3 className="font-body text-xs uppercase text-gray-600 font-medium">Email</h3>
-            <p className="font-body text-sm text-gray-500">contact@proteinking.co.kr</p>
-          </div>
-
-          {/* 전화 */}
-          <div className="space-y-2">
-            <h3 className="font-body text-xs uppercase text-gray-600 font-medium">Phone</h3>
-            <p className="font-body text-sm text-gray-500">1588-0000</p>
+            <p className="font-body text-sm text-gray-500">hello@proteinking.ltd</p>
           </div>
 
           {/* 주소 */}
