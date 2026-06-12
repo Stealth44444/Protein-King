@@ -7,11 +7,11 @@ import { useRouter, usePathname } from '@/i18n/navigation'
 
 const LOCALE_LABELS: Record<string, string> = {
   en: 'EN',
-  'zh-HK': '廣東話',
+  hk: '廣東話',
   ko: 'KO',
 }
 
-const LOCALES = ['en', 'zh-HK', 'ko'] as const
+const LOCALES = ['en', 'hk', 'ko'] as const
 
 export default function Header() {
   const t = useTranslations('header')
