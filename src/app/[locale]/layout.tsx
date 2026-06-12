@@ -22,6 +22,10 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: 'Protein King — Instant Blend Vending',
   description: 'Install a Protein King station at your gym. Fixed monthly revenue, zero inventory hassle.',
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
+  },
 }
 
 type Props = {
