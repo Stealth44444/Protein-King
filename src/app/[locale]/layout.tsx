@@ -20,21 +20,21 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Protein King — Instant Blend Vending',
+  title: 'Protein King — The Premium Protein Blending Machine.',
   description: 'Install a Protein King station at your gym. Fixed monthly revenue, zero inventory hassle.',
   icons: {
     icon: '/icon.png',
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'Protein King — Instant Blend Vending',
+    title: 'Protein King — The Premium Protein Blending Machine.',
     description: 'Install a Protein King station at your gym. Fixed monthly revenue, zero inventory hassle.',
     images: [{ url: '/og.png', width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Protein King — Instant Blend Vending',
+    title: 'Protein King — The Premium Protein Blending Machine.',
     description: 'Install a Protein King station at your gym. Fixed monthly revenue, zero inventory hassle.',
     images: ['/og.png'],
   },
