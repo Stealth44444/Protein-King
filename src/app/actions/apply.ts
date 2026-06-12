@@ -24,7 +24,7 @@ export async function applyAction(
 
   const resend = new Resend(process.env.RESEND_API_KEY)
   const { error } = await resend.emails.send({
-    from: 'Protein King <onboarding@resend.dev>',
+    from: 'Protein King <hello@proteinking.ltd>',
     to: process.env.APPLY_EMAIL_TO!,
     subject: `[Partner Enquiry] ${businessName}${branchName ? ` – ${branchName}` : ''} · ${contactName}`,
     html: `
