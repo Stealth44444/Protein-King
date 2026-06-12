@@ -54,12 +54,12 @@ function TestimonialCard({ item, index }: { item: TestimonialItem; index: number
       className="bg-[#1a1a1a] rounded-2xl p-6 flex flex-col gap-4 h-full"
     >
       {item.headline && (
-        <h3 className="font-body font-black text-xl text-white leading-snug break-keep">
+        <h3 className="font-body font-black text-xl text-white leading-snug break-words">
           {item.headline}
         </h3>
       )}
       <StarRating />
-      <p className="font-body text-sm text-gray-400 leading-relaxed flex-1 break-keep">
+      <p className="font-body text-sm text-gray-400 leading-relaxed flex-1 break-words">
         {item.text}
       </p>
       <div className="pt-4 border-t border-white/5">
@@ -85,7 +85,7 @@ function TestimonialCardWide({ item, index }: { item: TestimonialItem; index: nu
           </h3>
         )}
         <StarRating />
-        <p className="font-body text-sm text-gray-400 leading-relaxed break-keep">
+        <p className="font-body text-sm text-gray-400 leading-relaxed break-words">
           {item.text}
         </p>
       </div>
@@ -105,7 +105,7 @@ export default function Testimonials() {
     <section className="bg-brand-dark py-20 md:py-32 overflow-hidden">
       <div className="wrapper">
         <div className="mb-12 md:mb-16">
-          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-keep whitespace-pre-line">
+          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-words whitespace-pre-line">
             {titleLines.map((line, i) =>
               i === titleLines.length - 1 ? (
                 <span key={i} className="text-gradient-brand">{line}</span>

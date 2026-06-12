@@ -31,7 +31,7 @@ export default function Profit() {
         
         {/* Header */}
         <div className="mb-12 md:mb-16">
-          <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight break-keep">
+          <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight break-words">
             {titleLines.map((line, i) =>
               i === titleLines.length - 1 ? (
                 <span key={i} className="text-gradient-brand">{line}</span>
@@ -57,10 +57,10 @@ export default function Profit() {
                 {step.num}
               </span>
               <div>
-                <h3 className="font-body font-bold text-lg md:text-xl text-white leading-snug mb-1 break-keep">
+                <h3 className="font-body font-bold text-lg md:text-xl text-white leading-snug mb-1 break-words">
                   {step.title}
                 </h3>
-                <p className="font-body text-sm text-gray-500 font-medium leading-relaxed break-keep">
+                <p className="font-body text-sm text-gray-500 font-medium leading-relaxed break-words">
                   {step.desc}
                 </p>
               </div>
@@ -94,7 +94,7 @@ export default function Profit() {
               transition={{ duration: 0.5, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
               className="grid grid-cols-[1fr_64px_64px] md:grid-cols-[1fr_100px_100px] py-6 border-b border-white/5 items-center"
             >
-              <span className="font-body text-sm md:text-base text-white font-semibold break-keep">
+              <span className="font-body text-sm md:text-base text-white font-semibold break-words">
                 {row.name}
               </span>
 
@@ -110,7 +110,7 @@ export default function Profit() {
             </motion.div>
           ))}
           
-          <p className="mt-6 font-body text-xs text-gray-400 font-medium text-center break-keep">
+          <p className="mt-6 font-body text-xs text-gray-400 font-medium text-center break-words">
             {t('footnote')}
           </p>
         </div>

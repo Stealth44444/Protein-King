@@ -30,7 +30,7 @@ export default function FacilityTypes() {
     <section className="bg-brand-dark py-20 md:py-32">
       <div className="wrapper">
         <div className="mb-12 md:mb-16">
-          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-keep whitespace-pre-line">
+          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-words whitespace-pre-line">
             {t('title').split('\n').map((line, i, arr) =>
               i === arr.length - 1 ? (
                 <span key={i} className="text-gradient-brand">{line}</span>
@@ -54,7 +54,7 @@ export default function FacilityTypes() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="font-body font-bold text-white text-sm leading-snug break-keep">{item.name}</h3>
+                <h3 className="font-body font-bold text-white text-sm leading-snug break-words">{item.name}</h3>
               </div>
             </div>
           ))}
@@ -80,8 +80,8 @@ export default function FacilityTypes() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h3 className="font-body font-bold text-white text-base mb-1 break-keep leading-snug">{item.name}</h3>
-                <p className="font-body text-xs text-white/55 leading-relaxed break-keep line-clamp-2">{item.desc}</p>
+                <h3 className="font-body font-bold text-white text-base mb-1 break-words leading-snug">{item.name}</h3>
+                <p className="font-body text-xs text-white/55 leading-relaxed break-words line-clamp-2">{item.desc}</p>
               </div>
             </motion.div>
           ))}

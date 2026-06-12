@@ -36,7 +36,7 @@ export default function HowItWorks() {
               {step.num}
             </span>
             <div>
-              <h3 className="font-body font-black text-3xl md:text-6xl text-white leading-none mb-3 break-keep">
+              <h3 className="font-body font-black text-3xl md:text-6xl text-white leading-none mb-3 break-words">
                 {step.title}
               </h3>
               <p className="font-body text-sm text-gray-500 font-medium">{step.desc}</p>

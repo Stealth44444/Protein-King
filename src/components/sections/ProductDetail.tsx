@@ -51,7 +51,7 @@ export default function ProductDetail() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight break-keep">
+              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight break-words">
                 {titleLines.map((line, i) =>
                   i === titleLines.length - 1 ? (
                     <span key={i} className="text-gradient-brand">{line}</span>
@@ -64,10 +64,10 @@ export default function ProductDetail() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 border-t border-white/10 pt-10">
                 {specs.map((spec, index) => (
                   <div key={index} className="space-y-1">
-                    <p className="font-body text-xs uppercase text-gray-500 font-medium break-keep">
+                    <p className="font-body text-xs uppercase text-gray-500 font-medium break-words">
                       {spec.label}
                     </p>
-                    <p className="font-body text-base font-medium text-white break-keep">
+                    <p className="font-body text-base font-medium text-white break-words">
                       {spec.value}
                     </p>
                   </div>

@@ -25,7 +25,7 @@ export default function ApplyForm() {
 
           {/* 좌측: 타이틀 + 안내 */}
           <div className="w-full lg:w-[36%]">
-            <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-5 leading-tight break-keep whitespace-pre-line">
+            <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-5 leading-tight break-words whitespace-pre-line">
               {t('title').split('\n').map((line, i, arr) =>
                 i === arr.length - 1 ? (
                   <span key={i} className="text-gradient-brand">{line}</span>
@@ -38,7 +38,7 @@ export default function ApplyForm() {
               {(['note1', 'note2', 'note3'] as const).map((key) => (
                 <div key={key} className="flex items-start gap-3">
                   <span className="mt-1.5 w-1 h-1 rounded-full bg-brand-gold shrink-0" />
-                  <p className="font-body text-sm text-white/35 leading-relaxed break-keep">{t(key)}</p>
+                  <p className="font-body text-sm text-white/35 leading-relaxed break-words">{t(key)}</p>
                 </div>
               ))}
             </div>
@@ -61,7 +61,7 @@ export default function ApplyForm() {
                       </svg>
                     </div>
                     <p className="font-body font-black text-white text-2xl mb-2">{t('successTitle')}</p>
-                    <p className="font-body text-white/40 text-sm break-keep">{t('successDesc')}</p>
+                    <p className="font-body text-white/40 text-sm break-words">{t('successDesc')}</p>
                   </motion.div>
                 ) : (
                   <motion.form key="form" action={action}>
@@ -163,7 +163,7 @@ export default function ApplyForm() {
                           initial={{ opacity: 0, y: -8 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -8 }}
-                          className="text-red-400 text-sm font-body mb-4 break-keep"
+                          className="text-red-400 text-sm font-body mb-4 break-words"
                         >
                           {t(state.errorCode as Parameters<typeof t>[0])}
                         </motion.p>

@@ -61,7 +61,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-body font-black text-[34px] leading-[1.25] text-white break-keep">
+            <h1 className="font-body font-black text-[34px] leading-[1.25] text-white break-words">
               <span className="block">{t('titlePrefix')}</span>
               <span className="block h-[1.25em]"><Typewriter phrases={phrases} /></span>
             </h1>
@@ -99,7 +99,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="flex-1 min-w-0"
           >
-            <h1 className="font-body font-black text-[54px] leading-[1.2] text-white break-keep max-w-xl">
+            <h1 className="font-body font-black text-[54px] leading-[1.2] text-white break-words max-w-xl">
               <span className="block">{t('titlePrefix')}</span>
               <span className="block h-[1.2em]"><Typewriter phrases={phrases} /></span>
             </h1>

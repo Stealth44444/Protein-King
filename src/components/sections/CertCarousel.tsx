@@ -25,7 +25,7 @@ export default function CertCarousel() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-12 md:mb-16"
         >
-          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-keep whitespace-pre-line">
+          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-words whitespace-pre-line">
             {titleLines.map((line, i) =>
               i === titleLines.length - 1 ? (
                 <span key={i} className="text-gradient-brand">{line}</span>
@@ -34,7 +34,7 @@ export default function CertCarousel() {
               )
             )}
           </h2>
-          <p className="mt-4 font-body text-sm md:text-base text-white/40 leading-relaxed break-keep max-w-xl">
+          <p className="mt-4 font-body text-sm md:text-base text-white/40 leading-relaxed break-words max-w-xl">
             {t('subtitle')}
           </p>
         </motion.div>
@@ -50,7 +50,7 @@ export default function CertCarousel() {
               className="bg-brand-dark px-5 py-6"
             >
               <p className="font-body font-black text-base text-white mb-1">{item.name}</p>
-              <p className="font-body text-xs text-white/35 leading-snug break-keep">{item.desc}</p>
+              <p className="font-body text-xs text-white/35 leading-snug break-words">{item.desc}</p>
             </motion.div>
           ))}
         </div>

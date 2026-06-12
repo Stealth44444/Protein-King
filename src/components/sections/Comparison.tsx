@@ -20,7 +20,7 @@ export default function Comparison() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="font-body font-black text-3xl md:text-5xl text-white mb-12 md:mb-16 leading-tight break-keep whitespace-pre-line"
+          className="font-body font-black text-3xl md:text-5xl text-white mb-12 md:mb-16 leading-tight break-words whitespace-pre-line"
         >
           {titleLines.map((line, i) =>
             i === titleLines.length - 1 ? (
@@ -49,7 +49,7 @@ export default function Comparison() {
               transition={{ duration: 0.4, delay: i * 0.07 }}
               className="grid grid-cols-[1fr_72px_72px] md:grid-cols-[1fr_100px_100px] items-center border-b border-white/[0.06] py-4 md:py-5"
             >
-              <p className="font-body text-sm md:text-base text-white/70 break-keep pr-4">{q}</p>
+              <p className="font-body text-sm md:text-base text-white/70 break-words pr-4">{q}</p>
               <div className="flex justify-center"><RedX /></div>
               <div className="flex justify-center"><GreenCheck /></div>
             </motion.div>

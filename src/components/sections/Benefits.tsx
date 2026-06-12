@@ -45,7 +45,7 @@ export default function Benefits() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="font-body font-black text-3xl md:text-5xl text-white mb-10 md:mb-12 leading-tight break-keep whitespace-pre-line"
+          className="font-body font-black text-3xl md:text-5xl text-white mb-10 md:mb-12 leading-tight break-words whitespace-pre-line"
         >
           {t('title').split('\n').map((line, i, arr) =>
             i === arr.length - 1 ? (

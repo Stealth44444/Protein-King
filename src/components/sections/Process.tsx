@@ -35,7 +35,7 @@ function StepCard({ step }: { step: ProcessStep }) {
 
       {/* Content */}
       <div className="flex-1 px-6 md:px-10 py-7 md:py-8">
-        <h3 className="font-body font-black text-lg md:text-2xl text-white leading-snug mb-2 break-keep">
+        <h3 className="font-body font-black text-lg md:text-2xl text-white leading-snug mb-2 break-words">
           {step.title}
         </h3>
         <p className="font-body text-sm text-gray-500 leading-relaxed break-words">
@@ -53,7 +53,7 @@ export default function Process() {
   return (
     <section className="bg-brand-dark py-16 md:py-24">
       <div className="wrapper">
-        <h2 className="font-body font-black text-4xl md:text-6xl text-white leading-tight whitespace-pre-line break-keep mb-12 md:mb-16">
+        <h2 className="font-body font-black text-4xl md:text-6xl text-white leading-tight whitespace-pre-line break-words mb-12 md:mb-16">
           {t('title').split('\n').map((line, i, arr) =>
             i === arr.length - 1 ? (
               <span key={i} className="text-gradient-brand">{line}</span>

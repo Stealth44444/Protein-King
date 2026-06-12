@@ -18,7 +18,7 @@ export default function FAQ() {
     <section className="bg-brand-dark py-20 md:py-32">
       <div className="wrapper">
         <div className="mb-12 md:mb-16">
-          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-keep whitespace-pre-line">
+          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-words whitespace-pre-line">
             {t('title').split('\n').map((line, i, arr) =>
               i === arr.length - 1 ? (
                 <span key={i} className="text-gradient-brand">{line}</span>
@@ -36,7 +36,7 @@ export default function FAQ() {
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between py-6 text-left group"
               >
-                <span className="font-body font-bold text-base md:text-lg text-white group-hover:text-brand-gold transition-colors duration-200 pr-8 break-keep">
+                <span className="font-body font-bold text-base md:text-lg text-white group-hover:text-brand-gold transition-colors duration-200 pr-8 break-words">
                   {item.q}
                 </span>
                 <motion.div
@@ -58,7 +58,7 @@ export default function FAQ() {
                     transition={{ duration: 0.25, ease: 'easeInOut' }}
                     className="overflow-hidden"
                   >
-                    <p className="font-body text-sm md:text-base text-gray-500 leading-relaxed pb-6 max-w-2xl break-keep">
+                    <p className="font-body text-sm md:text-base text-gray-500 leading-relaxed pb-6 max-w-2xl break-words">
                       {item.a}
                     </p>
                   </motion.div>
