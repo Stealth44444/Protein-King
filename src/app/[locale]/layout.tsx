@@ -26,6 +26,18 @@ export const metadata: Metadata = {
     icon: '/icon.png',
     apple: '/apple-icon.png',
   },
+  openGraph: {
+    title: 'Protein King — Instant Blend Vending',
+    description: 'Install a Protein King station at your gym. Fixed monthly revenue, zero inventory hassle.',
+    images: [{ url: '/og.png', width: 1200, height: 630 }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Protein King — Instant Blend Vending',
+    description: 'Install a Protein King station at your gym. Fixed monthly revenue, zero inventory hassle.',
+    images: ['/og.png'],
+  },
 }
 
 type Props = {
