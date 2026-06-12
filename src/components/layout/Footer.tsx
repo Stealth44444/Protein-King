@@ -15,12 +15,6 @@ export default async function Footer() {
             <p className="font-body text-sm text-gray-500">{t('tagline')}</p>
           </div>
 
-          {/* 이메일 */}
-          <div className="space-y-2">
-            <h3 className="font-body text-xs uppercase text-gray-600 font-medium">Email</h3>
-            <p className="font-body text-sm text-gray-500">hello@proteinking.ltd</p>
-          </div>
-
           {/* 주소 */}
           <div className="space-y-2">
             <h3 className="font-body text-xs uppercase text-gray-600 font-medium">Address</h3>
