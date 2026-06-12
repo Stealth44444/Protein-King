@@ -6,7 +6,7 @@ export default async function Footer() {
 
   return (
     <footer className="bg-brand-dark border-t border-white/10 py-10">
-      <div className="wrapper">
+      <div className="max-w-[1280px] mx-auto w-full px-4 md:px-6 xl:px-10">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
 
           {/* 로고 + 설명 */}
