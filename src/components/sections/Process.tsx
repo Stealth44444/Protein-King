@@ -38,7 +38,7 @@ function StepCard({ step }: { step: ProcessStep }) {
         <h3 className="font-body font-black text-lg md:text-2xl text-white leading-snug mb-2 break-keep">
           {step.title}
         </h3>
-        <p className="font-body text-sm text-gray-500 leading-relaxed break-keep">
+        <p className="font-body text-sm text-gray-500 leading-relaxed break-words">
           {step.desc}
         </p>
       </div>

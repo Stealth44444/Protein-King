@@ -78,9 +78,9 @@ function TestimonialCardWide({ item, index }: { item: TestimonialItem; index: nu
       transition={{ duration: 0.5, delay: 0.15 }}
       className="bg-[#1a1a1a] rounded-2xl p-8 flex flex-col md:flex-row md:gap-12 md:items-center"
     >
-      <div className="flex-1 flex flex-col gap-4">
+      <div className="flex-1 min-w-0 flex flex-col gap-4">
         {item.headline && (
-          <h3 className="font-body font-black text-xl text-white leading-snug break-keep">
+          <h3 className="font-body font-black text-xl text-white leading-snug break-words">
             {item.headline}
           </h3>
         )}
