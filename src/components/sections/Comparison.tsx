@@ -32,10 +32,10 @@ export default function Comparison() {
         </motion.h2>
 
         {/* Column headers */}
-        <div className="grid grid-cols-[1fr_52px_52px] md:grid-cols-[1fr_100px_100px] pb-4 border-b border-white/10 mb-0">
+        <div className="grid grid-cols-[1fr_72px_72px] md:grid-cols-[1fr_100px_100px] pb-4 border-b border-white/10 mb-0">
           <div />
-          <p className="font-body text-xs uppercase font-semibold text-gray-600 tracking-widest text-center">{t('col1')}</p>
-          <p className="font-body text-xs uppercase font-bold text-brand-gold tracking-widest text-center">{t('col2')}</p>
+          <p className="font-body text-xs font-semibold text-gray-600 text-center leading-snug md:uppercase md:tracking-widest">{t('col1')}</p>
+          <p className="font-body text-xs font-bold text-brand-gold text-center leading-snug md:uppercase md:tracking-widest">{t('col2')}</p>
         </div>
 
         {/* Rows */}
@@ -47,7 +47,7 @@ export default function Comparison() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.07 }}
-              className="grid grid-cols-[1fr_52px_52px] md:grid-cols-[1fr_100px_100px] items-center border-b border-white/[0.06] py-4 md:py-5"
+              className="grid grid-cols-[1fr_72px_72px] md:grid-cols-[1fr_100px_100px] items-center border-b border-white/[0.06] py-4 md:py-5"
             >
               <p className="font-body text-sm md:text-base text-white/70 break-keep pr-4">{q}</p>
               <div className="flex justify-center"><RedX /></div>
