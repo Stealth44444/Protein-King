@@ -21,6 +21,19 @@ export default async function Footer() {
             <p className="font-body text-sm text-gray-500">proteinking.ltd@gmail.com</p>
           </div>
 
+          {/* WhatsApp */}
+          <div className="space-y-2">
+            <h3 className="font-body text-xs uppercase text-gray-600 font-medium">WhatsApp</h3>
+            <a
+              href="https://wa.me/821044251597"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body text-sm text-gray-500 hover:text-brand-gold transition-colors"
+            >
+              +82 10 4425 1597
+            </a>
+          </div>
+
           {/* 주소 */}
           <div className="space-y-2">
             <h3 className="font-body text-xs uppercase text-gray-600 font-medium">Address</h3>
