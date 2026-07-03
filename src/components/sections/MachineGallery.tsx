@@ -35,14 +35,14 @@ export default function MachineGallery() {
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
           {/* 설명 영역 */}
-          <div className="w-full md:w-[38%] order-2 md:order-1 md:pl-10 lg:pl-12">
+          <div className="w-full md:w-[38%] order-1 md:pl-10 lg:pl-12">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight break-words">
+              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight [word-break:keep-all]">
                 {titleLines.map((line, i) =>
                   i === titleLines.length - 1 ? (
                     <span key={i} className="text-gradient-brand">{line}</span>
@@ -52,7 +52,7 @@ export default function MachineGallery() {
                 )}
               </h2>
               {/* 기술 스펙 그리드 */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 border-t border-white/10 pt-10">
+              <div className="grid grid-cols-1 gap-y-6 border-t border-white/10 pt-10">
                 {specs.map((spec, index) => (
                   <div key={index} className="space-y-1">
                     <p className="font-body text-xs uppercase text-gray-500 font-medium break-words">
@@ -68,16 +68,16 @@ export default function MachineGallery() {
           </div>
 
           {/* 이미지 영역 */}
-          <div className="w-full md:w-[62%] order-1 md:order-2 flex justify-center md:justify-end">
+          <div className="w-full md:w-[65%] order-2 flex justify-center md:justify-end">
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative w-full"
+              className="relative w-full md:w-[105%]"
             >
-              <div className="relative w-full aspect-[4/3] md:aspect-[16/9]">
+              <div className="relative w-full aspect-square md:aspect-[4/3]">
                 <Image
-                  src="/machine_detail.png"
+                  src="/re.png"
                   alt="Internal Technical Detail"
                   fill
                   className="object-contain object-center md:object-right"

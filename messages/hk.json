@@ -9,7 +9,7 @@
       "安裝費用全免",
       "無需入貨或落單",
       "由補貨到結算我們全包",
-      "即日起計收益"
+      "空間即係收益"
     ],
     "cta": "立即申請合作 →",
     "scroll": "向下滾動"
@@ -129,11 +129,11 @@
     "title": "唔係我哋自吹，\n聽場地營運者親口講。",
     "items": [
       {
-        "name": "Alex Wong",
-        "handle": "@alexwong.hk",
-        "role": "CrossFit 健身操館主 · 麻浦",
+        "name": "Luke Taylor",
+        "handle": "@luketaylor.cf",
+        "role": "CrossFit 健身操館主 · 坎培拉",
         "time": "2d",
-        "initials": "AW",
+        "initials": "LT",
         "color": "#3B82F6",
         "headline": "引入之後我乜都冇做過。",
         "text": "CrossFit 嘅會員反應特別直接，引進任何嘢佢哋即刻有反應，好唔好睇得出嘅。Protein King 第一個星期就靜靜地融入咗。我冇特別介紹，冇宣傳，會員自己去用。運營管理方面都冇聯絡過我，我就完全放低咗。引入之後我乜都冇做過，但佢係度運行緊。誠實講，呢個先係真正嘅方便。",
@@ -142,11 +142,11 @@
         "likes": "124"
       },
       {
-        "name": "Sarah Chan",
-        "handle": "@sarahchan.pilates",
-        "role": "普拉提館主 · 蔚山",
+        "name": "Ashley Johnson",
+        "handle": "@ashleyjohnson.pilates",
+        "role": "普拉提館主",
         "time": "5d",
-        "initials": "SC",
+        "initials": "AJ",
         "color": "#EC4899",
         "headline": "氣氛改變咗。",
         "text": "平時堂後會員打個招呼就走，我一直覺得有啲可惜。Protein King 引入之後，有人開始喺度等飲品，順手同其他會員傾兩句。堂後嘅氣氛自然地延續落去，唔會即刻散。收益固然好，但呢個氣氛嘅改變其實係更大嘅驚喜。",
@@ -155,11 +155,11 @@
         "likes": "89"
       },
       {
-        "name": "Kevin Choi",
-        "handle": "@kevchoi.gym",
+        "name": "Casey Bennett",
+        "handle": "@caseybennett.gym",
         "role": "健身室館主 · 悉尼",
         "time": "1w",
-        "initials": "KC",
+        "initials": "CB",
         "color": "#10B981",
         "stars": 5,
         "headline": "我從來冇後悔過呢個決定。",
@@ -169,11 +169,11 @@
         "likes": "203"
       },
       {
-        "name": "Jenny Ng",
-        "handle": "@jenny.ng.sports",
-        "role": "大學體育部主管 · 松坡",
+        "name": "Owen Han",
+        "handle": "@owen.han",
+        "role": "Y大學 相關人士",
         "time": "2w",
-        "initials": "JN",
+        "initials": "OH",
         "color": "#8B5CF6",
         "headline": "場地愈大，呢樣嘢愈重要。",
         "text": "場地規模大，運營負擔低先係第一位。我管緊大學體育部，每次引入新嘢都會有員工跟進、有投訴跟住嚟。Protein King 兩個月冇收過任何維修聯絡，補貨自動上門補好。場地愈大，呢種事愈重要。",
@@ -182,11 +182,11 @@
         "likes": "67"
       },
       {
-        "name": "David Lam",
-        "handle": "@dlam.fitness",
-        "role": "酒店健身房經理 · 冠岳",
+        "name": "Ryan Kwon",
+        "handle": "@ryankwon.fit",
+        "role": "S酒店健身房經理",
         "time": "3d",
-        "initials": "DL",
+        "initials": "RK",
         "color": "#F59E0B",
         "headline": "運營審批比預期快得多。",
         "text": "酒店健身引入任何東西，都要先過運營部。有冇額外人工？清潔維修由邊個負責？呢啲問題全部要答到先可以通過。Protein King 每個條件都符合：零費用、自行解決維修、自動結算。運營審批比我預期快得多。",
@@ -195,11 +195,11 @@
         "likes": "341"
       },
       {
-        "name": "李智敏",
-        "handle": "@jimin.climb",
+        "name": "Kayla Brooks",
+        "handle": "@kaylabrooks.climb",
         "role": "攀石場館主 · 昆士柏",
         "time": "4d",
-        "initials": "JM",
+        "initials": "KB",
         "color": "#EC4899",
         "headline": "完美解決咗一個我一直搵唔到答案嘅需求。",
         "text": "攀石強度高，落牆之後即刻想補充係必然嘅。但一直冇一個好嘅方案。放幾條 bar 感覺唔啱，擺 RTD 又尷尬。Protein King 引入之後，呢個需求乾淨俐落地解決咗，會員反應真係好好。唔需要自己親力親為去管，呢個係最大嘅優點。",
@@ -323,46 +323,16 @@
     "title": "10項國際認證，\n安全有保證。",
     "subtitle": "JK91 持有歐洲、美國、英國及國際標準嘅全面安全認證。",
     "items": [
-      {
-        "name": "CE",
-        "desc": "歐洲電氣及機械安全標準認證"
-      },
-      {
-        "name": "CB",
-        "desc": "國際電氣產品安全測試認證"
-      },
-      {
-        "name": "FCC",
-        "desc": "美國聯邦通訊委員會電磁兼容認證"
-      },
-      {
-        "name": "UL",
-        "desc": "美國保險商實驗室安全認證"
-      },
-      {
-        "name": "ISO 9001",
-        "desc": "國際品質管理體系認證"
-      },
-      {
-        "name": "SGS",
-        "desc": "全球檢驗、測試及認證機構核准"
-      },
-      {
-        "name": "UKCA",
-        "desc": "英國合規評估認證"
-      },
-      {
-        "name": "ETL Intertek",
-        "desc": "北美安全及性能認證"
-      },
-      {
-        "name": "FDA",
-        "desc": "美國食品藥物管理局食品接觸材料安全認證"
-      },
-      {
-        "name": "RoHS",
-        "desc": "限制有害物質使用指令合規"
-      }
+      { "name": "CE", "desc": "歐洲電氣及機械安全標準認證" },
+      { "name": "CB", "desc": "國際電氣產品安全測試認證" },
+      { "name": "FCC", "desc": "美國聯邦通訊委員會電磁兼容認證" },
+      { "name": "UL", "desc": "美國保險商實驗室安全認證" },
+      { "name": "ISO 9001", "desc": "國際品質管理體系認證" },
+      { "name": "SGS", "desc": "全球檢驗、測試及認證機構核准" },
+      { "name": "UKCA", "desc": "英國合規評估認證" },
+      { "name": "ETL Intertek", "desc": "北美安全及性能認證" },
+      { "name": "FDA", "desc": "美國食品藥物管理局食品接觸材料安全認證" },
+      { "name": "RoHS", "desc": "限制有害物質使用指令合規" }
     ]
   },
   "howItWorks": {
@@ -386,55 +356,32 @@
     ]
   },
   "productDetail": {
-    "title": "最智能嘅機器\n成就你嘅品牌格調。",
+    "title": "唔係預製嘅。\n就係而家，即場新鮮混合。",
     "subtitle": "30至70秒即場製作。3°C凍飲到90°C熱飲，隨意調節。Android 11配備Wi-Fi及藍牙——專為無人運作而設計。",
+    "mixLabel": "+ 所有粉末形式補充劑均相容",
+    "mixOptions": [
+      { "name": "乳清蛋白", "desc": "訓練後恢復的優質乳清蛋白" },
+      { "name": "BCAA", "desc": "減少肌肉疲勞的支鏈氨基酸" },
+      { "name": "肌酸", "desc": "提升力量和爆發力" },
+      { "name": "Pre-Workout 補充品", "desc": "高強度訓練所需的能量與專注力" }
+    ],
     "specs": [
-      {
-        "label": "機身尺寸",
-        "value": "W 700 × D 740 × H 1905 mm"
-      },
-      {
-        "label": "製作時間",
-        "value": "30–70秒"
-      },
-      {
-        "label": "飲品溫度",
-        "value": "3°C – 室溫 – 90°C"
-      },
-      {
-        "label": "容量",
-        "value": "大桶5個(4L) + 小桶4個(2.2L)"
-      },
-      {
-        "label": "電力",
-        "value": "1800W / AC 220V"
-      },
-      {
-        "label": "連接",
-        "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0"
-      }
+      { "label": "機身尺寸", "value": "W 700 × D 740 × H 1905 mm" },
+      { "label": "製作時間", "value": "30–70秒" },
+      { "label": "飲品溫度", "value": "3°C – 室溫 – 90°C" },
+      { "label": "容量", "value": "大桶5個(4L) + 小桶4個(2.2L)" },
+      { "label": "電力", "value": "1800W / AC 220V" },
+      { "label": "連接", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
     ]
   },
   "machineGallery": {
-    "title": "可信賴嘅硬件，\n經過驗證嘅安全性。",
+    "title": "由混合到清洗，\n全部自動搞掂。",
     "subtitle": "專為無人運作而設計。JK91由精準混合到衛生管理，每一個內部零件都符合嚴格標準。",
     "specs": [
-      {
-        "label": "操作系統",
-        "value": "Android 11.0"
-      },
-      {
-        "label": "記憶體",
-        "value": "RAM 2GB / ROM 32GB"
-      },
-      {
-        "label": "混合模式",
-        "value": "固定 / 移動 / 間歇 / 升級算法"
-      },
-      {
-        "label": "使用環境",
-        "value": "5–35°C，濕度≤80%"
-      }
+      { "label": "操作系統", "value": "Android 11.0" },
+      { "label": "記憶體", "value": "RAM 2GB / ROM 32GB" },
+      { "label": "混合模式", "value": "固定 / 移動 / 間歇 / 升級算法" },
+      { "label": "使用環境", "value": "5–35°C，濕度≤80%" }
     ]
   },
   "profit": {
@@ -464,32 +411,27 @@
       "center": "場地"
     },
     "tableRows": [
-      {
-        "name": "機器安裝及佈置",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "產品定期補貨",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "維修及保養",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "付款及結算",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "提供空間（70厘米）",
-        "brand": false,
-        "center": true
-      }
+      { "name": "機器安裝及佈置", "brand": true, "center": false },
+      { "name": "產品定期補貨", "brand": true, "center": false },
+      { "name": "維修及保養", "brand": true, "center": false },
+      { "name": "付款及結算", "brand": true, "center": false },
+      { "name": "提供空間（70厘米）", "brand": false, "center": true }
     ],
     "footnote": "* 分成比例會根據場地規模及環境喺簽約時個別協商。"
+  },
+  "about": {
+    "label": "PROTEIN KING",
+    "title": "你嘅不滿，\n我哋嚟解決。",
+    "frustrations": [
+      "\"蛋白粉質素差，唔想再食。\"",
+      "\"呢啲成分，要咁貴？唔合理。\"",
+      "\"補充蛋白質好麻煩，懶得理。\""
+    ],
+    "body": "Protein King 就係由呢三個不滿開始。\n\n我哋唔係淨係賣飲品。我哋係要建立一種文化——令健康嘅選擇成為日常生活嘅一部分，唔再係特別嘅事。學生、打工仔定係認真練身嘅運動員——我哋係直接將新鮮營養帶到你已有嘅空間。",
+    "stats": [
+      { "value": "70cm", "label": "唯一嘅準備" },
+      { "value": "$0", "label": "由安裝到運營" },
+      { "value": "25秒", "label": "最好嘅一杯" }
+    ]
   }
 }

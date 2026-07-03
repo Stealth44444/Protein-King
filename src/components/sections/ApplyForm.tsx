@@ -38,7 +38,7 @@ export default function ApplyForm() {
               {(['note1', 'note2', 'note3'] as const).map((key) => (
                 <div key={key} className="flex items-start gap-3">
                   <span className="mt-1.5 w-1 h-1 rounded-full bg-brand-gold shrink-0" />
-                  <p className="font-body text-sm text-white/35 leading-relaxed break-words">{t(key)}</p>
+                  <p className={`font-body text-sm text-white/35 leading-relaxed ${key === 'note1' ? 'whitespace-nowrap' : 'break-words'}`}>{t(key)}</p>
                 </div>
               ))}
             </div>

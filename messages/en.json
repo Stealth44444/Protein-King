@@ -4,12 +4,12 @@
   },
   "hero": {
     "label": "PROTEIN KING",
-    "titlePrefix": "Just give us 70 cm.",
+    "titlePrefix": "All we need is a corner.",
     "phrases": [
       "Zero install cost.",
       "No stock. No orders.",
       "We handle everything.",
-      "Earn from day one."
+      "Space is revenue."
     ],
     "cta": "Become a Partner →",
     "scroll": "Scroll to explore"
@@ -129,11 +129,11 @@
     "title": "Don't take our word for it.\nHear from the operators.",
     "items": [
       {
-        "name": "Alex Wong",
-        "handle": "@alexwong.hk",
-        "role": "CrossFit Box Owner · Mapo",
+        "name": "Luke Taylor",
+        "handle": "@luketaylor",
+        "role": "CrossFit Box Owner · Canberra",
         "time": "2d",
-        "initials": "AW",
+        "initials": "LT",
         "color": "#3B82F6",
         "headline": "I haven't done a single thing since we installed it.",
         "text": "CrossFit members are immediate — you bring something in, they react right away, good or bad. Protein King just settled in quietly from the first week. I didn't introduce it or promote it. Members found it on their own. Nothing comes in from the ops side either, so I just stopped thinking about it. I've done absolutely nothing since we installed it, and it's still running. Honestly, that's what real convenience feels like.",
@@ -142,11 +142,11 @@
         "likes": "124"
       },
       {
-        "name": "Sarah Chan",
-        "handle": "@sarahchan.pilates",
-        "role": "Pilates Studio Owner · Ulsan",
+        "name": "Ashley Johnson",
+        "handle": "@ashleyjohnson.pilates",
+        "role": "Pilates Studio Owner",
         "time": "5d",
-        "initials": "SC",
+        "initials": "AJ",
         "color": "#EC4899",
         "headline": "The atmosphere changed.",
         "text": "After class, members would say goodbye and walk straight out. That always felt like a missed opportunity. Since Protein King came in, people started lingering — waiting for their drink, chatting with other members. The studio energy naturally carried past the session. The revenue is great, but that shift in atmosphere was honestly the bigger surprise.",
@@ -155,11 +155,11 @@
         "likes": "89"
       },
       {
-        "name": "Kevin Choi",
-        "handle": "@kevchoi.gym",
+        "name": "Casey Bennett",
+        "handle": "@caseybennett.gym",
         "role": "Gym Owner · Sydney",
         "time": "1w",
-        "initials": "KC",
+        "initials": "CB",
         "color": "#10B981",
         "stars": 5,
         "headline": "I've never once thought it was the wrong call.",
@@ -169,11 +169,11 @@
         "likes": "203"
       },
       {
-        "name": "Jenny Ng",
-        "handle": "@jenny.ng.sports",
-        "role": "University Sports Director · Songpa",
+        "name": "Owen Han",
+        "handle": "@owen.han",
+        "role": "University Associate",
         "time": "2w",
-        "initials": "JN",
+        "initials": "OH",
         "color": "#8B5CF6",
         "headline": "The bigger the facility, the more this matters.",
         "text": "At scale, operational simplicity is everything. Every time we bring something in here, it creates a staff member, and complaints follow. With Protein King, there's been zero maintenance contact in two months. Restocking just happens. The bigger the facility, the more something like this matters.",
@@ -182,11 +182,11 @@
         "likes": "67"
       },
       {
-        "name": "David Lam",
-        "handle": "@dlam.fitness",
-        "role": "Hotel Fitness Manager · Gwanak",
+        "name": "Ryan Kwon",
+        "handle": "@ryankwon.fit",
+        "role": "Hotel S Fitness Manager",
         "time": "3d",
-        "initials": "DL",
+        "initials": "RK",
         "color": "#F59E0B",
         "headline": "Operations approved it faster than I expected.",
         "text": "In hotel fitness, anything you bring in needs operations sign-off first. Does it add labour costs? Who handles cleaning and maintenance? All of that has to be sorted. Protein King checked every box: no cost, self-managed maintenance, automated settlement. Operations approved it faster than I expected.",
@@ -195,11 +195,11 @@
         "likes": "341"
       },
       {
-        "name": "Jimin Lee",
-        "handle": "@jimin.climb",
+        "name": "Kayla Brooks",
+        "handle": "@kaylabrooks.climb",
         "role": "Climbing Gym Owner · Queens Park",
         "time": "4d",
-        "initials": "JM",
+        "initials": "KB",
         "color": "#EC4899",
         "headline": "It solved a need I couldn't figure out how to fill.",
         "text": "Climbing is high-intensity — members always want something right after they come off the wall. But there was never a clean solution. A protein bar shelf felt off. Stacking RTDs was awkward. Protein King just solved it cleanly. Members love it, and not having to manage it myself is honestly one of the biggest draws.",
@@ -270,7 +270,7 @@
     ]
   },
   "apply": {
-    "title": "Just give us 70 cm.\nWe'll handle the rest.",
+    "title": "All we need is a corner.\nWe'll handle the rest.",
     "subtitle": "More than a vending machine — a partnership that grows your revenue and your members' experience.",
     "note1": "Our team will reach out within 1–2 business days after your enquiry.",
     "note2": "We'll walk you through the revenue model, installation, and any questions.",
@@ -315,6 +315,21 @@
     "errorEmail": "Please enter your email.",
     "errorSend": "Failed to send. Please try again."
   },
+  "about": {
+    "label": "ABOUT PROTEIN KING",
+    "title": "Your frustrations.\nWe'll handle them.",
+    "frustrations": [
+      "\"Tired of low-quality protein.\"",
+      "\"Too expensive for what's inside.\"",
+      "\"Too much hassle to keep up with.\""
+    ],
+    "body": "Protein King started with these three frustrations.\n\nWe're not just placing machines — we're building a culture where healthy choices happen naturally. Students, professionals, athletes: fresh nutrition in the spaces where they already are. Not a special occasion. Just part of the day.",
+    "stats": [
+      { "value": "0.53 m²", "label": "All You Need" },
+      { "value": "$0", "label": "Setup to Operation" },
+      { "value": "25s", "label": "Your Best Cup, Every Time" }
+    ]
+  },
   "footer": {
     "tagline": "The Premium Protein Blending Machine.",
     "copy": "© 2025 Protein King"
@@ -323,46 +338,16 @@
     "title": "10 international certifications.\nBuilt to a standard.",
     "subtitle": "The JK91 holds safety certifications across European, US, UK, and international standards.",
     "items": [
-      {
-        "name": "CE",
-        "desc": "European electrical & mechanical safety compliance"
-      },
-      {
-        "name": "CB",
-        "desc": "International electrical safety testing"
-      },
-      {
-        "name": "FCC",
-        "desc": "US Federal Communications Commission EMC certification"
-      },
-      {
-        "name": "UL",
-        "desc": "Underwriters Laboratories safety certification"
-      },
-      {
-        "name": "ISO 9001",
-        "desc": "International quality management system"
-      },
-      {
-        "name": "SGS",
-        "desc": "Global inspection, testing & certification"
-      },
-      {
-        "name": "UKCA",
-        "desc": "UK Conformity Assessed certification"
-      },
-      {
-        "name": "ETL Intertek",
-        "desc": "North American safety & performance certification"
-      },
-      {
-        "name": "FDA",
-        "desc": "US FDA food-contact material safety"
-      },
-      {
-        "name": "RoHS",
-        "desc": "Restriction of hazardous substances compliance"
-      }
+      { "name": "CE", "desc": "European electrical & mechanical safety compliance" },
+      { "name": "CB", "desc": "International electrical safety testing" },
+      { "name": "FCC", "desc": "US Federal Communications Commission EMC certification" },
+      { "name": "UL", "desc": "Underwriters Laboratories safety certification" },
+      { "name": "ISO 9001", "desc": "International quality management system" },
+      { "name": "SGS", "desc": "Global inspection, testing & certification" },
+      { "name": "UKCA", "desc": "UK Conformity Assessed certification" },
+      { "name": "ETL Intertek", "desc": "North American safety & performance certification" },
+      { "name": "FDA", "desc": "US FDA food-contact material safety" },
+      { "name": "RoHS", "desc": "Restriction of hazardous substances compliance" }
     ]
   },
   "howItWorks": {
@@ -386,55 +371,32 @@
     ]
   },
   "productDetail": {
-    "title": "The smartest machine\ncompletes your brand.",
+    "title": "Not pre-made.\nFreshly blended, right now.",
     "subtitle": "Fresh blends in 30–70 seconds. Cold or hot, 3°C to 90°C. Android 11 with Wi-Fi and Bluetooth — built for unattended operation.",
+    "mixLabel": "+ Compatible with all powder-form supplements",
+    "mixOptions": [
+      { "name": "Whey Protein", "desc": "High-quality whey protein for post-workout recovery" },
+      { "name": "BCAA", "desc": "Branch-chain amino acids to reduce muscle fatigue" },
+      { "name": "Creatine", "desc": "Boost strength and power output" },
+      { "name": "Pre-Workout Booster", "desc": "Energy and focus for intense training sessions" }
+    ],
     "specs": [
-      {
-        "label": "Dimensions",
-        "value": "W 700 × D 740 × H 1905 mm"
-      },
-      {
-        "label": "Prep Time",
-        "value": "30–70 seconds"
-      },
-      {
-        "label": "Temperature",
-        "value": "3°C – Room Temp – 90°C"
-      },
-      {
-        "label": "Capacity",
-        "value": "5 × 4L + 4 × 2.2L canisters"
-      },
-      {
-        "label": "Power",
-        "value": "1800W / AC 220V"
-      },
-      {
-        "label": "Connectivity",
-        "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0"
-      }
+      { "label": "Dimensions", "value": "W 700 × D 740 × H 1905 mm" },
+      { "label": "Prep Time", "value": "30–70 seconds" },
+      { "label": "Temperature", "value": "3°C – Room Temp – 90°C (±3°C)" },
+      { "label": "Capacity", "value": "5 × 4L + 4 × 2.2L canisters" },
+      { "label": "Power", "value": "Rated 1800W / Standby 100W" },
+      { "label": "Connectivity", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
     ]
   },
   "machineGallery": {
-    "title": "Trusted hardware,\nproven safety.",
+    "title": "From blending to cleaning.\nIt handles everything itself.",
     "subtitle": "Built to run unattended. The JK91 is engineered for continuous operation — from precision blending to hygiene, every component is held to a strict standard.",
     "specs": [
-      {
-        "label": "OS",
-        "value": "Android 11.0"
-      },
-      {
-        "label": "Memory",
-        "value": "2 GB RAM / 32 GB ROM"
-      },
-      {
-        "label": "Mixing Modes",
-        "value": "Fixed / Moving / Intermittent / Upgraded"
-      },
-      {
-        "label": "Environment",
-        "value": "5–35°C, ≤80% RH"
-      }
+      { "label": "OS", "value": "Android 11.0" },
+      { "label": "Memory", "value": "2 GB RAM / 32 GB ROM" },
+      { "label": "Mixing Modes", "value": "Fixed / Moving / Intermittent / Upgraded" },
+      { "label": "Environment", "value": "5–35°C, ≤80% RH" }
     ]
   },
   "profit": {
@@ -464,31 +426,11 @@
       "center": "Center"
     },
     "tableRows": [
-      {
-        "name": "Machine Installation & Setup",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "Regular Product Refilling",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "Maintenance & Repairs",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "Payments & Settlement",
-        "brand": true,
-        "center": false
-      },
-      {
-        "name": "Provide Space (70 cm)",
-        "brand": false,
-        "center": true
-      }
+      { "name": "Machine Installation & Setup", "brand": true, "center": false },
+      { "name": "Regular Product Refilling", "brand": true, "center": false },
+      { "name": "Maintenance & Repairs", "brand": true, "center": false },
+      { "name": "Payments & Settlement", "brand": true, "center": false },
+      { "name": "Provide Space", "brand": false, "center": true }
     ],
     "footnote": "* Revenue share ratios are negotiated individually during contract setup based on facility scale."
   }

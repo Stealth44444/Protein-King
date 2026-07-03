@@ -57,6 +57,27 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'KimJeongCheolHandwriting';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KimJeongCheolHandwriting';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KimJeongCheolHandwriting';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
 @theme {
   /* Colors */
   --color-brand-dark: #0D0D0D;
@@ -67,7 +88,7 @@
 
   /* Fonts */
   --font-display: var(--font-bebas, sans-serif);
-  --font-body: 'Pretendard', 'Noto Sans KR', var(--font-space-grotesk, sans-serif);
+  --font-body: 'Pretendard', 'Noto Sans KR', var(--font-archivo, sans-serif);
 }
 
 @layer base {
@@ -93,6 +114,11 @@
   }
 
   .text-gradient-brand {
+    font-family: var(--font-caveat), sans-serif;
+
+  :lang(ko) & {
+    font-family: 'KimJeongCheolHandwriting', sans-serif;
+  }
     background: linear-gradient(to right, #38bde9, #f5c54e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

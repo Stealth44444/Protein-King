@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
+import About from '@/components/sections/About'
 import ProductDetail from '@/components/sections/ProductDetail'
 import MachineGallery from '@/components/sections/MachineGallery'
 import Comparison from '@/components/sections/Comparison'
@@ -17,6 +18,7 @@ export default function LocalePage() {
       <Header />
       <main>
         <Hero />
+        <About />
         <ProductDetail />
         <MachineGallery />
         <Comparison />

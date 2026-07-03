@@ -39,7 +39,7 @@ function Typewriter({ phrases }: { phrases: string[] }) {
   }, [])
 
   return (
-    <span className="text-gradient-brand whitespace-nowrap">
+    <span className="text-gradient-brand [word-break:keep-all]">
       {text}
       <span className={`${blink ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>|</span>
     </span>
@@ -51,7 +51,7 @@ export default function Hero() {
   const phrases = t.raw('phrases') as string[]
 
   return (
-    <section className="relative flex items-center pt-20 bg-[#0a0a0a] overflow-hidden min-h-[100svh] md:min-h-[90vh]">
+    <section className="relative flex items-center pt-20 bg-[#0a0a0a] overflow-hidden min-h-[100svh]">
       <div className="relative z-10 wrapper w-full">
 
         {/* Mobile: 세로 스택 */}

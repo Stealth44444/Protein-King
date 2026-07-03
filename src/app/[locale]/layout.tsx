@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Bebas_Neue, Space_Grotesk } from 'next/font/google'
+import { Bebas_Neue, Space_Grotesk, Caveat, Archivo } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
@@ -16,6 +16,18 @@ const bebasNeue = Bebas_Neue({
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk',
+  display: 'swap',
+})
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  variable: '--font-caveat',
+  display: 'swap',
+})
+
+const archivo = Archivo({
+  subsets: ['latin'],
+  variable: '--font-archivo',
   display: 'swap',
 })
 
@@ -58,7 +70,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${bebasNeue.variable} ${spaceGrotesk.variable}`}>
+      <body className={`${bebasNeue.variable} ${spaceGrotesk.variable} ${caveat.variable} ${archivo.variable}`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

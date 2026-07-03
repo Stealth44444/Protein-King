@@ -105,7 +105,7 @@ export default function Testimonials() {
     <section className="bg-brand-dark py-20 md:py-32 overflow-hidden">
       <div className="wrapper">
         <div className="mb-12 md:mb-16">
-          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight break-words whitespace-pre-line">
+          <h2 className="font-body font-black text-3xl md:text-5xl text-white leading-tight [word-break:keep-all]">
             {titleLines.map((line, i) =>
               i === titleLines.length - 1 ? (
                 <span key={i} className="text-gradient-brand">{line}</span>

@@ -21,6 +21,12 @@ export default async function Footer() {
             <p className="font-body text-sm text-gray-500">proteinking.ltd@gmail.com</p>
           </div>
 
+          {/* 전화 */}
+          <div className="space-y-2">
+            <h3 className="font-body text-xs uppercase text-gray-600 font-medium">Phone</h3>
+            <p className="font-body text-sm text-gray-500">+852 6256 8541</p>
+          </div>
+
           {/* 주소 */}
           <div className="space-y-2">
             <h3 className="font-body text-xs uppercase text-gray-600 font-medium">Address</h3>
@@ -45,7 +51,7 @@ export default async function Footer() {
               </svg>
             </a>
             <a
-              href="https://wa.me/821044251597"
+              href="https://wa.me/85262568541"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
