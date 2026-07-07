@@ -13,9 +13,6 @@ export default function PPNPartnership() {
   const t = useTranslations('ppnPartnership')
   const badges = t.raw('badges') as Badge[]
 
-  const titleLines = t('title').split('\n')
-  const headlineLines = titleLines.slice(0, -1)
-
   return (
     <section className="relative py-24 bg-brand-dark overflow-hidden text-white">
       <div className="relative z-10 wrapper">
@@ -32,22 +29,41 @@ export default function PPNPartnership() {
               <p className="font-body text-xs uppercase tracking-widest text-white/30 font-medium mb-4">
                 {t('label')}
               </p>
-              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-4 leading-tight [word-break:keep-all]">
-                {headlineLines.map((line, i) => (
-                  <span key={i}>{line}</span>
-                ))}
+              <h2 className="flex items-center gap-4 md:gap-6 mb-6">
+                <span className="relative inline-block w-[130px] h-[52px] md:w-[190px] md:h-[76px]">
+                  <Image
+                    src="/logo.png"
+                    alt="Protein King"
+                    fill
+                    className="object-contain object-left"
+                  />
+                </span>
+                <span className="font-body font-black text-2xl md:text-4xl text-white/30 leading-none">×</span>
+                <a
+                  href="https://primalpower-nutrition.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-block w-[130px] h-[52px] md:w-[190px] md:h-[76px] opacity-90 hover:opacity-100 transition-opacity"
+                >
+                  <Image
+                    src="/ppn-logo.png"
+                    alt="PPN (Primal Power Nutrition)"
+                    fill
+                    className="object-contain object-left"
+                  />
+                </a>
               </h2>
-              <div className="relative w-[140px] h-[53px] md:w-[200px] md:h-[76px] mb-6">
-                <Image
-                  src="/ppn-logo.png"
-                  alt="PPN (Primal Power Nutrition)"
-                  fill
-                  className="object-contain object-left"
-                />
-              </div>
-              <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-10">
+              <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-4">
                 {t('body')}
               </p>
+              <a
+                href="https://primalpower-nutrition.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block font-body text-xs text-white/40 hover:text-white/70 underline underline-offset-4 transition-colors mb-10"
+              >
+                {t('link')}
+              </a>
 
               <div className="grid grid-cols-2 gap-px bg-white/[0.06]">
                 {badges.map((badge, i) => (
