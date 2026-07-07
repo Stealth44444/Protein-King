@@ -389,6 +389,17 @@
       { "label": "Connectivity", "value": "Wi-Fi 2.4G/5G · Bluetooth 5.0" }
     ]
   },
+  "ppnPartnership": {
+    "label": "PARTNERSHIP",
+    "title": "Protein King ×\nPPN.",
+    "body": "PPN is a premium protein brand — born in Hong Kong, made in the USA. Protein King has partnered exclusively with PPN to supply every gram of protein we blend.",
+    "badges": [
+      { "name": "FDA Registered", "desc": "Manufactured in an FDA-registered facility" },
+      { "name": "GMP Certified", "desc": "Produced under strict global manufacturing protocols" },
+      { "name": "USA Manufactured", "desc": "Born in Hong Kong. Made in the USA" },
+      { "name": "3rd-Party Tested", "desc": "Independently verified for purity, potency, and safety" }
+    ]
+  },
   "machineGallery": {
     "title": "From blending to cleaning.\nIt handles everything itself.",
     "subtitle": "Built to run unattended. The JK91 is engineered for continuous operation — from precision blending to hygiene, every component is held to a strict standard.",
