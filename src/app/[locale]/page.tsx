@@ -3,6 +3,7 @@ import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
 import About from '@/components/sections/About'
 import ProductDetail from '@/components/sections/ProductDetail'
+import PPNPartnership from '@/components/sections/PPNPartnership'
 import MachineGallery from '@/components/sections/MachineGallery'
 import Comparison from '@/components/sections/Comparison'
 import FacilityTypes from '@/components/sections/FacilityTypes'
@@ -20,6 +21,7 @@ export default function LocalePage() {
         <Hero />
         <About />
         <ProductDetail />
+        <PPNPartnership />
         <MachineGallery />
         <Comparison />
         <FacilityTypes />
