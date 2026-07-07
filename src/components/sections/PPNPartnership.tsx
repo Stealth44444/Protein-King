@@ -57,7 +57,7 @@ export default function PPNPartnership() {
                 href="https://primalpower-nutrition.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block font-body text-xs uppercase tracking-widest text-white/40 hover:text-white/70 underline underline-offset-4 transition-colors"
+                className="inline-block font-body text-xs font-bold uppercase tracking-widest text-white border border-white/20 rounded-full px-6 py-3 hover:border-brand-gold hover:text-brand-gold transition-colors"
               >
                 {t('link')}
               </a>
