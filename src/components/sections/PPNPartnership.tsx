@@ -55,7 +55,7 @@ export default function PPNPartnership() {
             </motion.div>
           </div>
 
-          {/* PPN 이미지 — 추후 PPN 파우더 통 + 자판기 합성 이미지로 교체 예정 */}
+          {/* PPN 이미지 — 추후 PPN 파우더 통 + 자판기 합성 이미지로 교체 예정. machine.png는 바로 위 ProductDetail 섹션에서 이미 쓰여서 중복돼 보이므로, 그 전까지는 protein_splash.png(제품 스플래시)를 임시로 사용 */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -63,12 +63,12 @@ export default function PPNPartnership() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="w-full md:w-1/2 flex justify-center"
           >
-            <div className="relative w-[280px] h-[520px] md:w-[400px] md:h-[740px]">
+            <div className="relative w-[320px] h-[420px] md:w-[440px] md:h-[580px]">
               <Image
-                src="/machine.png"
-                alt="Protein King × PPN"
+                src="/protein_splash.png"
+                alt="Protein King shake made with PPN protein"
                 fill
-                className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] scale-[0.85]"
+                className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
               />
             </div>
           </motion.div>
