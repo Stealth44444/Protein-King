@@ -53,7 +53,7 @@ export default function PPNPartnership() {
               <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-6">
                 {t('body')}
               </p>
-              <p className="font-body text-base md:text-lg font-bold text-white leading-snug break-words max-w-md mb-8">
+              <p className="font-body text-base md:text-lg font-bold text-white leading-snug break-words max-w-md mx-auto text-center mb-8">
                 {t('quality')}
               </p>
               <a
