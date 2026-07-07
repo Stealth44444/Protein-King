@@ -1,0 +1,79 @@
+'use client'
+
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
+
+interface Badge {
+  name: string
+  desc: string
+}
+
+export default function PPNPartnership() {
+  const t = useTranslations('ppnPartnership')
+  const badges = t.raw('badges') as Badge[]
+
+  const titleLines = t('title').split('\n')
+
+  return (
+    <section className="relative py-24 bg-brand-dark overflow-hidden text-white">
+      <div className="relative z-10 wrapper">
+        <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
+
+          {/* 카피 + 뱃지 */}
+          <div className="w-full md:w-1/2">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <p className="font-body text-xs uppercase tracking-widest text-white/30 font-medium mb-4">
+                {t('label')}
+              </p>
+              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight [word-break:keep-all]">
+                {titleLines.map((line, i) =>
+                  i === titleLines.length - 1 ? (
+                    <span key={i} className="text-gradient-brand">{line}</span>
+                  ) : (
+                    <span key={i}>{line}<br /></span>
+                  )
+                )}
+              </h2>
+              <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-10">
+                {t('body')}
+              </p>
+
+              <div className="grid grid-cols-2 gap-px bg-white/[0.06]">
+                {badges.map((badge, i) => (
+                  <div key={i} className="bg-brand-dark px-5 py-6">
+                    <p className="font-body font-black text-base text-white mb-1">{badge.name}</p>
+                    <p className="font-body text-xs text-white/35 leading-snug break-words">{badge.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* PPN 이미지 — 추후 PPN 파우더 통 + 자판기 합성 이미지로 교체 예정 */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="w-full md:w-1/2 flex justify-center"
+          >
+            <div className="relative w-[280px] h-[520px] md:w-[400px] md:h-[740px]">
+              <Image
+                src="/machine.png"
+                alt="Protein King × PPN"
+                fill
+                className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] scale-[0.85]"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
