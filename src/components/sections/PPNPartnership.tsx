@@ -50,11 +50,8 @@ export default function PPNPartnership() {
                   />
                 </a>
               </h2>
-              <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-6">
+              <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-8">
                 {t('body')}
-              </p>
-              <p className="font-body text-base md:text-lg font-bold text-white leading-snug break-words max-w-md mx-auto text-center mb-8">
-                {t('quality')}
               </p>
               <a
                 href="https://primalpower-nutrition.com/"
@@ -84,7 +81,7 @@ export default function PPNPartnership() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="w-full md:w-1/2 flex justify-center"
           >
-            <div className="relative w-[320px] h-[452px] md:w-[440px] md:h-[622px]">
+            <div className="relative w-[380px] h-[538px] md:w-[560px] md:h-[792px]">
               <Image
                 src="/ppn.png"
                 alt="Protein King machine with PPN protein products"
