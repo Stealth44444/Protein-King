@@ -392,13 +392,8 @@
   "ppnPartnership": {
     "label": "PARTNERSHIP",
     "body": "PPN's Protein Matrix is a 100% whey protein — clean-label, with zero fillers or artificial additives, and full ingredient disclosure on every batch. Born in Hong Kong, made in the USA, and engineered by athletes for real performance. Protein King has partnered exclusively with PPN to supply every gram of protein we blend.",
-    "link": "Visit PPN ↗",
-    "badges": [
-      { "name": "FDA Registered", "desc": "Manufactured in an FDA-registered facility" },
-      { "name": "GMP Certified", "desc": "Produced under strict global manufacturing protocols" },
-      { "name": "USA Manufactured", "desc": "Born in Hong Kong. Made in the USA" },
-      { "name": "3rd-Party Tested", "desc": "Independently verified for purity, potency, and safety" }
-    ]
+    "quality": "This isn't discount-bin protein. It's the real premium — and every batch is quality-guaranteed.",
+    "link": "PRIMALPOWER-NUTRITION.COM"
   },
   "machineGallery": {
     "title": "From blending to cleaning.\nIt handles everything itself.",

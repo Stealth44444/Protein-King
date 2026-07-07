@@ -4,21 +4,15 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
-interface Badge {
-  name: string
-  desc: string
-}
-
 export default function PPNPartnership() {
   const t = useTranslations('ppnPartnership')
-  const badges = t.raw('badges') as Badge[]
 
   return (
     <section className="relative py-24 bg-brand-dark overflow-hidden text-white">
       <div className="relative z-10 wrapper">
         <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
 
-          {/* 카피 + 뱃지 */}
+          {/* 카피 */}
           <div className="w-full md:w-1/2">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -53,26 +47,20 @@ export default function PPNPartnership() {
                   />
                 </a>
               </h2>
-              <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-4">
+              <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-6">
                 {t('body')}
+              </p>
+              <p className="font-body text-base md:text-lg font-bold text-white leading-snug break-words max-w-md mb-8">
+                {t('quality')}
               </p>
               <a
                 href="https://primalpower-nutrition.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block font-body text-xs text-white/40 hover:text-white/70 underline underline-offset-4 transition-colors mb-10"
+                className="inline-block font-body text-xs uppercase tracking-widest text-white/40 hover:text-white/70 underline underline-offset-4 transition-colors"
               >
                 {t('link')}
               </a>
-
-              <div className="grid grid-cols-2 gap-px bg-white/[0.06]">
-                {badges.map((badge, i) => (
-                  <div key={i} className="bg-brand-dark px-5 py-6">
-                    <p className="font-body font-black text-base text-white mb-1">{badge.name}</p>
-                    <p className="font-body text-xs text-white/35 leading-snug break-words">{badge.desc}</p>
-                  </div>
-                ))}
-              </div>
             </motion.div>
           </div>
 
