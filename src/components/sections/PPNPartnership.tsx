@@ -14,6 +14,7 @@ export default function PPNPartnership() {
   const badges = t.raw('badges') as Badge[]
 
   const titleLines = t('title').split('\n')
+  const headlineLines = titleLines.slice(0, -1)
 
   return (
     <section className="relative py-24 bg-brand-dark overflow-hidden text-white">
@@ -31,15 +32,19 @@ export default function PPNPartnership() {
               <p className="font-body text-xs uppercase tracking-widest text-white/30 font-medium mb-4">
                 {t('label')}
               </p>
-              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-6 leading-tight [word-break:keep-all]">
-                {titleLines.map((line, i) =>
-                  i === titleLines.length - 1 ? (
-                    <span key={i} className="text-gradient-brand">{line}</span>
-                  ) : (
-                    <span key={i}>{line}<br /></span>
-                  )
-                )}
+              <h2 className="font-body font-black text-3xl md:text-5xl text-white mb-4 leading-tight [word-break:keep-all]">
+                {headlineLines.map((line, i) => (
+                  <span key={i}>{line}</span>
+                ))}
               </h2>
+              <div className="relative w-[140px] h-[53px] md:w-[200px] md:h-[76px] mb-6">
+                <Image
+                  src="/ppn-logo.png"
+                  alt="PPN (Primal Power Nutrition)"
+                  fill
+                  className="object-contain object-left"
+                />
+              </div>
               <p className="font-body text-sm md:text-base text-white/50 leading-relaxed break-words max-w-md mb-10">
                 {t('body')}
               </p>
