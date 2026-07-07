@@ -65,12 +65,11 @@ export default function PPNPartnership() {
                 {t('link')}
               </a>
 
-              <div className="grid grid-cols-2 gap-px bg-white/[0.06] mt-10">
+              <div className="flex flex-wrap gap-2 mt-8">
                 {badges.map((badge, i) => (
-                  <div key={i} className="bg-brand-dark px-5 py-6">
-                    <p className="font-body font-black text-base text-white mb-1">{badge.name}</p>
-                    <p className="font-body text-xs text-white/35 leading-snug break-words">{badge.desc}</p>
-                  </div>
+                  <span key={i} className="font-body text-xs font-medium text-white/50 border border-white/15 rounded-full px-3 py-1.5">
+                    {badge.name}
+                  </span>
                 ))}
               </div>
             </motion.div>
