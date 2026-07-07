@@ -375,10 +375,15 @@
     ]
   },
   "ppnPartnership": {
-    "label": "合作夥伴",
     "body": "PPN 嘅 Protein Matrix 係 100% 乳清蛋白——唔含填充劑同人工添加劑，每一批都全面公開成分。喺香港起家、喺美國生產，仲有運動員親自參與研發。Protein King 同 PPN 達成獨家合作，我哋調配嘅每一克蛋白質，都嚟自 PPN。",
     "quality": "「真正嘅高端品質，每一批都由我哋保證。」",
-    "link": "瀏覽 PPN 官網"
+    "link": "瀏覽 PPN 官網",
+    "badges": [
+      { "name": "FDA 註冊", "desc": "喺美國FDA註冊嘅工廠生產" },
+      { "name": "GMP 認證", "desc": "按照嚴格嘅全球生產標準製造" },
+      { "name": "美國製造", "desc": "喺香港起家，喺美國製造" },
+      { "name": "第三方檢測", "desc": "由獨立機構驗證純度、效能同安全性" }
+    ]
   },
   "machineGallery": {
     "title": "由混合到清洗，\n全部自動搞掂。",

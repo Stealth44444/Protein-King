@@ -4,8 +4,14 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
+interface Badge {
+  name: string
+  desc: string
+}
+
 export default function PPNPartnership() {
   const t = useTranslations('ppnPartnership')
+  const badges = t.raw('badges') as Badge[]
 
   return (
     <section className="relative py-24 bg-brand-dark overflow-hidden text-white">
@@ -20,9 +26,6 @@ export default function PPNPartnership() {
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-body text-xs uppercase tracking-widest text-white/30 font-medium mb-4">
-                {t('label')}
-              </p>
               <h2 className="flex items-center gap-4 md:gap-6 mb-6">
                 <span className="relative inline-block w-[130px] h-[52px] md:w-[190px] md:h-[76px]">
                   <Image
@@ -61,6 +64,15 @@ export default function PPNPartnership() {
               >
                 {t('link')}
               </a>
+
+              <div className="grid grid-cols-2 gap-px bg-white/[0.06] mt-10">
+                {badges.map((badge, i) => (
+                  <div key={i} className="bg-brand-dark px-5 py-6">
+                    <p className="font-body font-black text-base text-white mb-1">{badge.name}</p>
+                    <p className="font-body text-xs text-white/35 leading-snug break-words">{badge.desc}</p>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           </div>
 
