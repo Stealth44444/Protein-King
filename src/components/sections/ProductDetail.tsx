@@ -50,7 +50,7 @@ export default function ProductDetail() {
             viewport={{ once: true }}
             className="w-full md:w-1/2 flex justify-center"
           >
-            <div className="relative w-[280px] h-[520px] md:w-[450px] md:h-[800px]">
+            <div className="relative w-[280px] h-[520px] md:w-[330px] md:h-[612px]">
               {IMAGES.map((src, i) => (
                 <div
                   key={src}
