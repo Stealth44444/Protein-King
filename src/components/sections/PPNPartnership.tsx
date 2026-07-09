@@ -81,7 +81,7 @@ export default function PPNPartnership() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="w-full md:w-1/2 flex justify-center"
           >
-            <div className="relative w-[380px] h-[538px] md:w-[560px] md:h-[792px]">
+            <div className="relative w-[300px] h-[280px] md:w-[420px] md:h-[392px]">
               <Image
                 src="/ppn.png"
                 alt="Protein King machine with PPN protein products"
