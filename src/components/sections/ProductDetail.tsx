@@ -15,10 +15,7 @@ interface MixOption {
   desc: string
 }
 
-const IMAGES = [
-  { src: '/machine.png', scale: 'scale-[0.85]' },
-  { src: '/machine2.png', scale: 'scale-[1.35]' },
-]
+const IMAGES = ['/machine.png', '/machine2.png']
 
 export default function ProductDetail() {
   const t = useTranslations('productDetail')
@@ -54,7 +51,7 @@ export default function ProductDetail() {
             className="w-full md:w-1/2 flex justify-center"
           >
             <div className="relative w-[280px] h-[520px] md:w-[450px] md:h-[800px]">
-              {IMAGES.map(({ src, scale }, i) => (
+              {IMAGES.map((src, i) => (
                 <div
                   key={src}
                   className={`absolute inset-0 transition-opacity duration-700 ${i === current ? 'opacity-100' : 'opacity-0'}`}
@@ -63,7 +60,7 @@ export default function ProductDetail() {
                     src={src}
                     alt={`Protein King Machine ${i + 1}`}
                     fill
-                    className={`object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-transform duration-700 ${scale}`}
+                    className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
                   />
                 </div>
               ))}
